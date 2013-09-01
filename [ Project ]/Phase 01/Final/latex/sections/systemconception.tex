@@ -1,0 +1,51 @@
+\section{System Conception}
+	\subsection{Global System View}
+
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.40]{img/globalview}
+			\caption{Global System View of the proposed solution (tentative)}
+		\end{figure}
+
+		The wind tunnel balance system will be a system that will be able to calibrate itself for initial use, balance itself during measurements, and report measurement of wind drag force and wind lift force to the user in a quick and easy manner reducing the time it takes to complete experiments and increasing accuracy by providing ways to determine unstable readings due to turbulence. Using the system involves five stages, detailed below.
+		
+		\begin{enumerate}
+			\item Balancing the system without the object.
+			\item Activate the wind tunnel to determine the initial drag and lift for the base.
+			\item Balancing the system with the object.
+			\item Activate the wind tunnel to determine the drag and lift for the base and the object.
+			\item Calculate the real drag and lift for the object and deliver the results.
+		\end{enumerate}
+
+		At system startup the user will have a button to auto calibrate the system prior to use, in which the system will make sure, by using the accelerometers, that the balance is in right position to begin its use. The user should then proceed to start the wind tunnel to obtain the values for the drag and lift of the base in which the object will be placed. Once this is done, the system will keep these values recorded so that the user can place the object in the base. These initial values are also displayed in the LCDs of the system. The system can then be balanced again with the object, and the wind tunnel started to begin the experiment. The system can then using the initial values compute the difference in the initial and final drag and lift forces to determine the true forces acting only on the object and not the base. 
+
+		Aerodynamic properties determined by the system are the drag and lift forces acting on the object. Additionally, formulas can be applied using these forces to determine the coefficients of drag and lift which help with computations done when scaling objects that are minimized. This can all be provided using the UI of the system hardware (LCD) as well the application UI (on software). 
+
+
+	\subsection{User Interface Level}
+
+		The system UI proposed will provide users the convenience of reading the current measurements and logging this information in intervals of time. The UI will also provide the user with the ability to control the system. Two proposed user interfaces are presented: the software UI using a personal computer, and the hardware UI using LCDs and LEDs.
+
+		For the software UI, the user will be presented with an organized manner of the drag and lift forces read from the system. Using the information read, measurements can be stored, computations can automatically be performed, and graphs can be provided. An mockup is shown in figures 5, 6 and 7.
+
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.40]{img/UI-PC}
+			\caption{UI Mockup}
+		\end{figure}
+
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.40]{img/UI-PC-2}
+			\caption{UI Mockup}
+		\end{figure}
+
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.40]{img/UI-Configuration}
+			\caption{UI Mockup}
+		\end{figure}
+
+		Computations that can be performed are for the coefficient of drag and lift which are calculated using the forces and other parameters provided by the user for which the interface provides input. Using the measurements stored, the UI can then provide other statistical measurements such as average and variance. This user interface will be updated periodically to display the status of the system, and the configuration settings allow the user to setup the sampling interval as well as the number of measurements before automatically stopping the experiment. Additional to providing the display of information, the UI will provide the user with software control of the system. The UI will have buttons that will be analogous to the hardware buttons given to the system. These buttons will provide control over the initial balancing of the system, the initial setup of the system and the measurement of the drag and lift of the system. The “Initial Setup” button will clear all of the measurements collected so far and will set the initial forces acting on the base. The “Balance” button will just put the balance ready for use by balancing the weight of the object or base. The “Start” button will start the measurements using the initial setup parameters to display the drag and the lift on the application as well as the other factors calculated.
+
+		For the hardware, UI and LCD panel will be provided which will display the current drag and lift forces acting on the object placed in the system. These measurements can then be stored as it is done in the software UI to provide an average and a variance. This will be displayed on the LCDs with a chosen frequency or sampling interval and to achieve this, the hardware UI will then feature a menu controllable by buttons on the LCD. Three buttons will be available as in the UI to control the initial setup, the balance and the start of the experiment.

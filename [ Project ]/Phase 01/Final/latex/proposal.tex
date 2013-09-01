@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Begin Document: name.tex
+\documentclass[12pt,letterpaper]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Imports and Commands
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%Images
+\usepackage{graphicx}
+\usepackage{float}
+
+%URLs
+\usepackage{url}
+
+%Change numbering for report style. 
+%Eliminates need for part and chapter.
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+%Changes Bibliography title to 'References'
+\renewcommand{\bibname}{References}
+
+%Page margin change.
+\usepackage[margin=1.0in]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuration
+\title{	AeroBal \\
+		\normalsize{
+			A project proposal submitted as a partial requirement 
+			of the Microprocessor Interfacing course ICOM-5217
+		}
+}	
+
+
+\date{August 29, 2013}
+\author{Anthony Llanos (Leader)\\ Jesus Luzon \\ Juan Lebron \\ Jean C. Mendez}
+
+%\author{Jesus Luzon}\\
+%\author{Juan Lebron}\\
+%\author{Jean C. Mendez}
+
+
+
+
+%Header Settings.
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin output of Document
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\input{sections/abstract.tex}
+	\input{sections/introduction.tex}
+	\input{sections/systembd.tex}
+	\input{sections/specs.tex}
+	\input{sections/systemconception.tex}
+	\input{sections/market.tex}
+	\input{sections/designcriteria.tex}
+	\input{sections/timetable.tex}
+	\input{sections/opinion.tex}
+	\input{sections/references.tex}
+	\input{sections/appendices.tex}
+\end{document}

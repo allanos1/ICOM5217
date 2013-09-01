@@ -1,0 +1,78 @@
+\section{Specifications}
+	\subsection{Requirements, Features and Limitations}
+		\begin{enumerate}
+			\item The system must provide equilibrium to the balance when two conditions are met:
+			
+			\begin{itemize}
+				\item The system is/is not under aerodynamic effects.
+				\item The system has/does not have the object attached to it.
+			\end{itemize}
+			
+			\item The system must be able to measure the force being applied to return the balance
+			to equilibrium.
+
+			\item The system must be able to measure the tilt in 2 axes.
+
+			\item The system must have a precision to at least the hundredths of pounds (0.01 lbs).
+
+			\item The system must be able to change between units (newtows, pounds).
+
+			\item The system must show the measurement of force in a simple GUI, the measurement of the coefficient of drag and coefficient of force, and show the average and variance of data.
+
+			\item A limitation is that due to turbulence, the instant forces being measured might not provide consistent results. Hence the measurements must be averaged and the variance of data must be provided.
+		\end{enumerate}
+
+
+	\subsection{Hardware and Software Requirements}
+	Hardware:
+		\begin{enumerate}
+		\item Microcontroller - The microcontroller will be used to process data, control the mechanics, and manage the communication with the communications module.
+
+ 		\item Force Sensors - The force sensors will be used to measure the forces being applied to the balance. This data will be transferred to the microcontroller.
+ 
+ 		\item Accelerometers - The accelerometer will be used to keep track of the position in which the balance is through the experiment. They will be used as tilt sensors.
+
+ 		\item Communications Module - The communications module will be used to send data to a remote user interface for data logging purposes.
+
+		\item LCD - The LCD will be used to display data and user feedback as well as a menu to the user for setup.
+
+		\item LED - The LEDs will be used to display system status.
+
+		\item Buttons - The buttons will be used for user input in the menus provided through the LED and for control.
+
+		\item User Interface - A computer interface will be provided to visualize data collected via communications module.
+
+		\item Power Management Circuit -  The power management circuit will be used to provide the necessary power to every component on the system to their required levels.
+
+		\item Movement Mechanism - The movement mechanism will be used to control the position of the balance.
+	\end{enumerate}
+	Software:
+	Various functions must be developed. They must, at a minimum, perform the following tasks: 
+		\begin{enumerate}
+			\item Track balance position.
+			\item Track force sensor data.
+			\item Stores sensor data.	
+			\item Controls movement mechanism based on force sensor data and balance position.
+			\item Calculates aerodynamic parameters based on logged data.
+			\item Communicate with user interface.
+			\item User Interface for LCD screen. 
+
+		\end{enumerate}
+
+
+	\subsection{Components}
+		\subsubsection{Communications}
+			The system will communicate with an application and/or device that reads, interprets and displays the result. This interface may be wired, wireless or a storage device.
+
+		\subsubsection{User Interface}
+			The system will incorporate an user interface in hardware and/or software basis. This UI will allow the user to initiate data reading and storage. While reading and when stopped,
+			the UI will show the user the data in tabular and graph form, and display statistical
+			information.
+
+		\subsubsection{Control Scheme}
+			The system must control all the components that contribute to keeping the system in
+			equilibrium. This must happen whether it is under the aerodynamic test or not. The
+			system will also provide manual control to the balance orientation or tilt.
+
+		\subsubsection{Microprocessor-Based}
+			The microprocessor is a necessary component due to the need of providing control as a function of the sensor readings to maintain equilibrium in the system. The microprocessor is also in charge of displaying the information read from the sensors (force) to the user interface (hardware and/or) and to provide control from user input (hardware and/or software). In software UI, the microprocessor is also in charge of managing the communication from the physical system.
