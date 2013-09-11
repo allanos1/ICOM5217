@@ -9,6 +9,7 @@
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 
+
 %Images
 \usepackage{graphicx}
 \usepackage{float}
@@ -54,8 +55,10 @@
 % Begin output of Document
 \begin{document}
 	\maketitle
-	\tableofcontents
 	\input{sections/abstract.tex}
+	\tableofcontents
+	\newpage
+	
 	\input{sections/introduction.tex}
 	\input{sections/systembd.tex}
 	\input{sections/specs.tex}

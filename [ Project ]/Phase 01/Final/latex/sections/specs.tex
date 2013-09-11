@@ -13,7 +13,7 @@
 
 			\item The system must be able to measure the tilt in 2 axes.
 
-			\item The system must have a precision to at least the hundredths of pounds (0.01 lbs).
+			\item The system must have a precision of at least the hundredths of pounds (0.01 lbs).
 
 			\item The system must be able to change between units (newtows, pounds).
 
@@ -24,7 +24,7 @@
 
 
 	\subsection{Hardware and Software Requirements}
-	Hardware:
+	\textbf{Hardware}:
 		\begin{enumerate}
 		\item Microcontroller - The microcontroller will be used to process data, control the mechanics, and manage the communication with the communications module.
 
@@ -46,14 +46,15 @@
 
 		\item Movement Mechanism - The movement mechanism will be used to control the position of the balance.
 	\end{enumerate}
-	Software:
+	\textbf{Software}:
 	Various functions must be developed. They must, at a minimum, perform the following tasks: 
 		\begin{enumerate}
 			\item Track balance position.
 			\item Track force sensor data.
-			\item Stores sensor data.	
-			\item Controls movement mechanism based on force sensor data and balance position.
-			\item Calculates aerodynamic parameters based on logged data.
+			\item Track friction and use the data for other calculations related to it.
+			\item Store sensor data.	
+			\item Control movement mechanism based on force sensor data and balance position.
+			\item Calculate aerodynamic parameters based on logged data.
 			\item Communicate with user interface.
 			\item User Interface for LCD screen. 
 
@@ -62,12 +63,12 @@
 
 	\subsection{Components}
 		\subsubsection{Communications}
-			The system will communicate with an application and/or device that reads, interprets and displays the result. This interface may be wired, wireless or a storage device.
+			The system will communicate with an application and/or device that reads, interprets and displays the result. This interface may be wired, wireless, or in a storage device.
 
 		\subsubsection{User Interface}
-			The system will incorporate an user interface in hardware and/or software basis. This UI will allow the user to initiate data reading and storage. While reading and when stopped,
+			The system will incorporate a user interface in hardware and/or software basis. This UI will allow the user to initiate data reading and storage. While reading and when stopped,
 			the UI will show the user the data in tabular and graph form, and display statistical
-			information.
+			information. 
 
 		\subsubsection{Control Scheme}
 			The system must control all the components that contribute to keeping the system in
