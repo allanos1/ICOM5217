@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  10 SEP 2013 22:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  10 SEP 2013 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**proposal.tex
-(./proposal.tex
+**phase02.tex
+(./phase02.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -128,21 +128,21 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks18
 )
-(./proposal.aux)
-\openout1 = `proposal.aux'.
+(./phase02.aux)
+\openout1 = `phase02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -235,162 +235,19 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./sections/abstract.tex [1]) (./proposal.toc)
-\tf@toc=\write3
-\openout3 = `proposal.toc'.
-
- [1
-
-] (./sections/introduction.tex
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-<img/intro-1.png, id=15, 236.5638pt x 177.3024pt>
-File: img/intro-1.png Graphic file (type png)
- <use img/intro-1.png>
-Package pdftex.def Info: img/intro-1.png used on input line 25.
-(pdftex.def)             Requested size: 165.5935pt x 124.11081pt.
-
-<img/intro-2.png, id=17, 252.4632pt x 189.3474pt>
-File: img/intro-2.png Graphic file (type png)
- <use img/intro-2.png>
-Package pdftex.def Info: img/intro-2.png used on input line 40.
-(pdftex.def)             Requested size: 176.72302pt x 132.54227pt.
-
-[2 <./img/intro-1.png>]) (./sections/systembd.tex
-<img/systembdv1.png, id=23, 1505.625pt x 642.4pt>
-File: img/systembdv1.png Graphic file (type png)
- <use img/systembdv1.png>
-Package pdftex.def Info: img/systembdv1.png used on input line 8.
-(pdftex.def)             Requested size: 451.691pt x 192.72148pt.
-)
-(./sections/specs.tex [3 <./img/intro-2.png> <./img/systembdv1.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [4])
-(./sections/systemconception.tex [5]
-<img/globalview.png, id=36, 786.68906pt x 440.39531pt>
-File: img/globalview.png Graphic file (type png)
-
-<use img/globalview.png>
-Package pdftex.def Info: img/globalview.png used on input line 6.
-(pdftex.def)             Requested size: 314.67004pt x 176.155pt.
- [6 <./img/globalview.png>]
-<img/UI-PC.png, id=41, 830.10126pt x 561.09625pt>
-File: img/UI-PC.png Graphic file (type png)
- <use img/UI-PC.png>
-Package pdftex.def Info: img/UI-PC.png used on input line 33.
-(pdftex.def)             Requested size: 332.03462pt x 224.43452pt.
-
-<img/UI-PC-2.png, id=42, 832.10875pt x 562.1pt>
-File: img/UI-PC-2.png Graphic file (type png)
- <use img/UI-PC-2.png>
-Package pdftex.def Info: img/UI-PC-2.png used on input line 39.
-(pdftex.def)             Requested size: 332.8376pt x 224.83601pt.
- [7 <./img/UI-PC.png>] <img/UI-Configuration.png, id=47, 831.105pt x 568.1225pt
->
-File: img/UI-Configuration.png Graphic file (type png)
-
-<use img/UI-Configuration.png>
-Package pdftex.def Info: img/UI-Configuration.png used on input line 45.
-(pdftex.def)             Requested size: 332.43611pt x 227.24496pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
- [8 <./img/UI-PC-2.png> <./img/UI-Configuration.png>]) (./sections/market.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-) (./sections/designcriteria.tex [9]) (./sections/timetable.tex
-<img/ptt-1.jpg, id=56, 511.9125pt x 485.815pt>
-File: img/ptt-1.jpg Graphic file (type jpg)
- <use img/ptt-1.jpg>
-Package pdftex.def Info: img/ptt-1.jpg used on input line 7.
-(pdftex.def)             Requested size: 307.14987pt x 291.49124pt.
-
-<img/ptt-2.jpg, id=57, 709.65125pt x 483.8075pt>
-File: img/ptt-2.jpg Graphic file (type jpg)
- <use img/ptt-2.jpg>
-Package pdftex.def Info: img/ptt-2.jpg used on input line 13.
-(pdftex.def)             Requested size: 425.79402pt x 290.28674pt.
- [10 <./img/ptt-1.jpg>] <img/ptt-3.jpg, id=61, 563.10374pt x 364.36125pt>
-File: img/ptt-3.jpg Graphic file (type jpg)
-
-<use img/ptt-3.jpg>
-Package pdftex.def Info: img/ptt-3.jpg used on input line 19.
-(pdftex.def)             Requested size: 337.86485pt x 218.61842pt.
- <img/ptt-4.jpg, id=62, 593.21625pt x 362.35374pt>
-File: img/ptt-4.jpg Graphic file (type jpg)
-
-<use img/ptt-4.jpg>
-Package pdftex.def Info: img/ptt-4.jpg used on input line 25.
-(pdftex.def)             Requested size: 355.9325pt x 217.41393pt.
-) (./sections/opinion.tex [11 <./img/ptt-2.jpg> <./img/ptt-3.jpg>] [12 <./img/p
-tt-4.jpg>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 
-     
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.21 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- 
+(./phase02.aux) ) 
 Here is how much of TeX's memory you used:
- 2573 strings out of 493488
- 36540 string characters out of 3141348
- 96343 words of memory out of 3000000
- 5796 multiletter control sequences out of 15000+200000
- 14051 words of font info for 53 fonts, out of 3000000 for 9000
+ 2395 strings out of 493488
+ 33509 string characters out of 3141348
+ 91261 words of memory out of 3000000
+ 5688 multiletter control sequences out of 15000+200000
+ 4628 words of font info for 17 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,6n,32p,1416b,256s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 38i,1n,32p,237b,78s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
