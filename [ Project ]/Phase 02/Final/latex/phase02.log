@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  10 SEP 2013 22:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  12 SEP 2013 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -131,18 +131,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./phase02.aux)
 \openout1 = `phase02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -235,19 +235,102 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./phase02.aux) ) 
-Here is how much of TeX's memory you used:
- 2395 strings out of 493488
- 33509 string characters out of 3141348
- 91261 words of memory out of 3000000
- 5688 multiletter control sequences out of 15000+200000
- 4628 words of font info for 17 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,1n,32p,237b,78s stack positions out of 5000i,500n,10000p,200000b,50000s
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
-No pages of output.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./phas
+e02.toc)
+\tf@toc=\write3
+\openout3 = `phase02.toc'.
+
+
+[1
+
+] (./sections/bdiagramv2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+<img/blockdiagramv2.png, id=12, 1468.48625pt x 950.55125pt>
+File: img/blockdiagramv2.png Graphic file (type png)
+
+<use img/blockdiagramv2.png>
+Package pdftex.def Info: img/blockdiagramv2.png used on input line 4.
+(pdftex.def)             Requested size: 440.54927pt x 285.16757pt.
+ [2 <./img/blockdiagramv2.png>])
+(./sections/mcuselection.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[4]) (./sections/operatingchart.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+<img/operating-chart-v1.png, id=29, 2409.0pt x 3086.53125pt>
+File: img/operating-chart-v1.png Graphic file (type png)
+
+<use img/operating-chart-v1.png>
+Package pdftex.def Info: img/operating-chart-v1.png used on input line 4.
+(pdftex.def)             Requested size: 457.71477pt x 586.44704pt.
+
+Overfull \hbox (5.58456pt too wide) in paragraph at lines 4--5
+[][] 
+ []
+
+[5 <./img/operating-chart-v1.png>]) (./phase02.aux) ) 
+Here is how much of TeX's memory you used:
+ 2508 strings out of 493488
+ 35310 string characters out of 3141348
+ 97284 words of memory out of 3000000
+ 5756 multiletter control sequences out of 15000+200000
+ 14091 words of font info for 53 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,7n,32p,744b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on phase02.pdf (6 pages, 445662 bytes).
 PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
