@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2013.8.18)  10 SEP 2013 21:11
+This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2013.8.18)  11 SEP 2013 23:00
 entering extended mode
 **proposal
 
@@ -210,8 +210,13 @@ File: img/intro-2.png Graphic file (type QTm)
  <use  "img/intro-2.png" > [2])
 ("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/s
 ystembd.tex"
-File: img/systembdv1.png Graphic file (type QTm)
- <use  "img/systembdv1.png" >)
+File: img/blockdiagramv2.png Graphic file (type QTm)
+ <use  "img/blockdiagramv2.png" >
+Overfull \hbox (60.04907pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+)
 ("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/s
 pecs.tex" [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
@@ -220,5 +225,86 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [4])
-("C:\Users\Jean
+ [4]
+[5])
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/s
+ystemconception.tex"
+File: img/globalview.png Graphic file (type QTm)
+ <use  "img/globalview.png" > [6] [7]
+File: img/UI-PC.png Graphic file (type QTm)
+
+<use  "img/UI-PC.png" >
+File: img/UI-PC-2.png Graphic file (type QTm)
+ <use  "img/UI-PC-2.png" > [8]
+File: img/UI-Configuration.png Graphic file (type QTm)
+
+<use  "img/UI-Configuration.png" >
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [9])
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/m
+arket.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+)
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/d
+esigncriteria.tex" [10])
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/t
+imetable.tex"
+File: img/ptt-1.jpg Graphic file (type QTm)
+ <use  "img/ptt-1.jpg" >
+File: img/ptt-2.jpg Graphic file (type QTm)
+ <use  "img/ptt-2.jpg" > [11]
+File: img/ptt-3.jpg Graphic file (type QTm)
+
+<use  "img/ptt-3.jpg" >
+File: img/ptt-4.jpg Graphic file (type QTm)
+ <use  "img/ptt-4.jpg" >)
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/o
+pinion.tex" [12] [13]
+Missing character: There is no ” in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+Missing character: There is no ü in font cmr12!
+)
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/r
+eferences.tex" [14])
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\sections/a
+ppendices.tex" [15
+
+]
+File: img/blog.png Graphic file (type QTm)
+ <use  "img/blog.png" >
+Overfull \hbox (21.04877pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+[16]) [17]
+("C:\Users\Jean\Desktop\Micro 2\Git\[ Project ]\Phase 01\Final\latex\proposal.a
+ux")
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1653 strings out of 429035
+ 21003 string characters out of 3167909
+ 83065 words of memory out of 3000000
+ 4854 multiletter control sequences out of 15000+200000
+ 14220 words of font info for 54 fonts, out of 3000000 for 9000
+ 912 hyphenation exceptions out of 8191
+ 25i,6n,32p,1400b,211s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on proposal.pdf (19 pages).
