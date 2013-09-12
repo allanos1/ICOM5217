@@ -1,36 +1,35 @@
 \section{Specifications}
 	\subsection{Requirements, Features and Limitations}
 		\begin{enumerate}
-			\item The system must provide equilibrium to the balance when two conditions are met:
+			\item The system must provide amount of force being applied to the object both in vertical and horizontal orientation when: 
 			
 			\begin{itemize}
-				\item The system is/is not under aerodynamic effects.
-				\item The system has/does not have the object attached to it.
+				\item The object is not under aerodynamic effects to calibrate and establish reference (initial) values of force measurement.
+				\item The object is under aerodynamic effects to determine the actual force.
 			\end{itemize}
 			
-			\item The system must be able to measure the force being applied to return the balance
-			to equilibrium.
-
-			\item The system must be able to measure the tilt in 2 axes.
+			\item The system must provide an interface to start experiments and take measurements (LCD prompts and buttons for example).
 
 			\item The system must have a precision of at least the hundredths of pounds (0.01 lbs).
 
-			\item The system must be able to change between units (newtows, pounds).
+			\item The system must be able to change between units (newtows, pounds) on the results provided.
 
 			\item The system must show the measurement of force in a simple GUI, the measurement of the coefficient of drag and coefficient of force, and show the average and variance of data.
 
 			\item A limitation is that due to turbulence, the instant forces being measured might not provide consistent results. Hence the measurements must be averaged and the variance of data must be provided.
+
+			\item The system must connect to multiple sensors that read the environmental data of the wind tunnel, such as humidity, temperature, and pressure, and provide this data.
+
+			\item The system must be able to read and control the wind speed of the tunnel.
+
 		\end{enumerate}
 
 
 	\subsection{Hardware and Software Requirements}
 	\textbf{Hardware}:
 		\begin{enumerate}
-		\item Microcontroller - The microcontroller will be used to process data, control the mechanics, and manage the communication with the communications module.
-
- 		\item Force Sensors - The force sensors will be used to measure the forces being applied to the balance. This data will be transferred to the microcontroller.
- 
- 		\item Accelerometers - The accelerometer will be used to keep track of the position in which the balance is through the experiment. They will be used as tilt sensors.
+		
+ 		\item Strain Gauges - The strain gauges will be used to measure the forces being applied to the object. This data will be transferred to the microcontroller.
 
  		\item Communications Module - The communications module will be used to send data to a remote user interface for data logging purposes.
 
@@ -40,35 +39,37 @@
 
 		\item Buttons - The buttons will be used for user input in the menus provided through the LED and for control.
 
-		\item User Interface - A computer interface will be provided to visualize data collected via communications module.
+		\item A minimized version of the wind tunnel for testing. This tunnel will be useful as a testbench for the project to not interfere in the actual system.
 
-		\item Power Management Circuit -  The power management circuit will be used to provide the necessary power to every component on the system to their required levels.
+		\item A mechanical system tied to the strain gauges that measures the amount of force applied. This mechanical system must move freely in the horizontal and vertical directions as minimum requirement. It must provide a minimally-obstructive extension that is inserted into the wind tunnel in order to provide a base for the object while interfering as little as possible with the aerodynamic measurements.
 
-		\item Movement Mechanism - The movement mechanism will be used to control the position of the balance.
+		\item A circuit that controls the actuator that controls the windows that change the wind speed of the tunnel. 
+
 	\end{enumerate}
 	\textbf{Software}:
 	Various functions must be developed. They must, at a minimum, perform the following tasks: 
 		\begin{enumerate}
-			\item Track balance position.
-			\item Track force sensor data.
-			\item Track friction and use the data for other calculations related to it.
-			\item Store sensor data.	
-			\item Control movement mechanism based on force sensor data and balance position.
-			\item Calculate aerodynamic parameters based on logged data.
-			\item Communicate with user interface.
-			\item User Interface for LCD screen. 
-
+			\item Store calibration values when the wind tunnel is off to use as reference (static values) and then substract them from actual or dynamic values when the wind tunnel is on to provide the correct measurement of force.
+			\item Store strain gauge sensor data on user input.
+			\item Compute statistical values of the results.
+			\item Calculate aerodynamic parameters based on stored data.
+			\item Communicate with user interface to display results.
+			\item Check status of the system to follow operating conditions (wind speed).
+			\item Display users the current procedure state of the system and available options.
+			\item Prompt users to continue other procedure states with the appropiate message.
+			\item Store and apply configuration parameters of experiment (wind speed, units, etc.). 
+			\item Provide the control signal to change the wind speed of the tunnel when configuration is changed.
+			\item Display status of the sensors that read environmental data.
 		\end{enumerate}
 
 
 	\subsection{Components}
 		\subsubsection{Communications}
-			The system will communicate with an application and/or device that reads, interprets and displays the result. This interface may be wired, wireless, or in a storage device.
+			The system will communicate with an application running on a tablet device that reads, interprets and displays the result. This communications interface is wireless using a Bluetooth module to achieve this communication.
 
 		\subsubsection{User Interface}
-			The system will incorporate a user interface in hardware and/or software basis. This UI will allow the user to initiate data reading and storage. While reading and when stopped,
-			the UI will show the user the data in tabular and graph form, and display statistical
-			information. 
+			The system will incorporate a user interface in hardware and software. This UI will allow the user to initiate data reading and storage. While reading and when stopped,
+			the UI will show the user the data in tabular and graph form, and display statistical information. For hardware, the system will display through a wired interface to an LCD the results of the experiment. For software, the system will communicate with a remote UI (tablet interface), through wireless communication using Bluetooth, which will read the values to display the tabular and graph form of the results.
 
 		\subsubsection{Control Scheme}
 			The system must control all the components that contribute to keeping the system in
