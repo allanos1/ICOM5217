@@ -1,0 +1,33 @@
+\section{Operating Chart}
+	For the operating chart, we determined the sequence of steps that the system goes through to perform its functionality. In the end we obtained the following procedures:
+
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.18]{img/operating-chart-v2}
+		\caption{The set of procedures AeroBal goes through.}
+	\end{figure}
+
+	The set of procedures can be \emph{summarized} as setup phase and an \emph{experiment} phase. For both phases the system must perform the same procedure, and after performing both procedures use the data obtained to compute the desired result. This is because the procedure must be executed for the base of the object and then the base along the object to later perform substraction of the results and obtain the values belonging to the object by itself.
+
+	The procedure is composed of the following steps:
+	\begin{enumerate}
+		\item Prompt to place the component (either the base for the setup phase or the object in the base for the experiment phase)
+		\item Wait for the confirmation to start the phase.
+		\item If confirmed, start the phase by obtaining the \emph{reference} values of the strain sensors.
+		\item Prompt and await for wind tunnel to turn on.
+		\item Once confirmed that the wind tunnel is turned on, await either store value or finish button to be pressed.
+		\begin{itemize}
+			\item If in setup phase, the value will be stored as an initial value.
+			\item If in experiment phase, the value will be stored as a final value.
+		\end{itemize}
+		\item If finish button is pressed the average value of the stored values will be stored as the initial or final value.
+		\item If in the setup phase, the system will prompt to place the object back at step 1. If not then it continues to the next step.
+		\item The system computes the final values from both by substracting the initial values from the final values.
+		\item The system outputs the results and finishes.
+	\end{enumerate}
+
+	This procedure is followed on the hardware user interface as well as on the software user interface with the exception that on the software user interface the values are stored on the device/tablet and can be viewed later by the user.\\
+
+	The system has a configuration interface both in the hardware and software interfaces that allows for the configuration of the speed in the wind tunnel.
+
+\newpage
