@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  12 SEP 2013 11:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  3 OCT 2013 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -128,35 +128,85 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks18
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count93
+\calc@Bcount=\count94
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count95
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@toc@title=\toks19
+\c@AM@survey=\count96
+\AM@templatesizebox=\box29
+)
 (./phase02.aux)
 \openout1 = `phase02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen113
-\scratchbox=\box28
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen114
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count97
+\scratchdimen=\dimen115
+\scratchbox=\box30
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen116
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -235,11 +285,12 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+\AtBeginShipoutBox=\box31
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -254,85 +305,136 @@ e02.toc)
 [1
 
 ] (./sections/bdiagramv2.tex
-<img/blockdiagramv2.png, id=12, 1468.48625pt x 950.55125pt>
-File: img/blockdiagramv2.png Graphic file (type png)
+<img/sbdv3.png, id=12, 2729.19624pt x 1826.825pt>
+File: img/sbdv3.png Graphic file (type png)
+ <use img/sbdv3.png>
+Package pdftex.def Info: img/sbdv3.png used on input line 7.
+(pdftex.def)             Requested size: 491.23413pt x 328.81432pt.
 
-<use img/blockdiagramv2.png>
-Package pdftex.def Info: img/blockdiagramv2.png used on input line 7.
-(pdftex.def)             Requested size: 440.54927pt x 285.16757pt.
+Overfull \hbox (21.47911pt too wide) in paragraph at lines 7--8
+ [][] 
+ []
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
-
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
- [2 <./img/blockdiagramv2.png>] <img/window-actuator.jpg, id=21, 642.4pt x 397.
-485pt>
-File: img/window-actuator.jpg Graphic file (type jpg)
-
-<use img/window-actuator.jpg>
-Package pdftex.def Info: img/window-actuator.jpg used on input line 62.
-(pdftex.def)             Requested size: 385.44298pt x 238.49283pt.
- [3]
-<img/relay-circuit.jpg, id=25, 341.275pt x 401.5pt>
+ [2 <./img/sbdv3.png>] <img/relay-circuit.jpg, id=21, 341.275pt x 401.5pt>
 File: img/relay-circuit.jpg Graphic file (type jpg)
 
 <use img/relay-circuit.jpg>
-Package pdftex.def Info: img/relay-circuit.jpg used on input line 68.
+Package pdftex.def Info: img/relay-circuit.jpg used on input line 63.
 (pdftex.def)             Requested size: 204.76657pt x 240.90184pt.
- [4 <./img/window-actuator.jpg> <./img/relay-circuit.jpg>]) (./sections/mcusele
-ction.tex [5]
-Underfull \hbox (badness 10000) in paragraph at lines 36--54
+ [3] [4 <./img/relay-circuit.jpg>])
+(./sections/mcuselection.tex [5]
+Underfull \hbox (badness 10000) in paragraph at lines 40--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--54
+Underfull \hbox (badness 10000) in paragraph at lines 40--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 [6]) (./sections/operatingchart.tex
-<img/operating-chart-v2.png, id=39, 2293.56876pt x 2965.0775pt>
-File: img/operating-chart-v2.png Graphic file (type png)
+<img/flowchart-outline.png, id=38, 1844.8925pt x 2363.83125pt>
+File: img/flowchart-outline.png Graphic file (type png)
 
-<use img/operating-chart-v2.png>
-Package pdftex.def Info: img/operating-chart-v2.png used on input line 6.
-(pdftex.def)             Requested size: 412.82457pt x 533.69093pt.
- [7 <./img/operating-chart-v2.png>] [8])
-(./phase02.aux) ) 
+<use img/flowchart-outline.png>
+Package pdftex.def Info: img/flowchart-outline.png used on input line 7.
+(pdftex.def)             Requested size: 368.97197pt x 472.75789pt.
+
+<img/flowchart-calibration.png, id=39, 1389.19pt x 2409.0pt>
+File: img/flowchart-calibration.png Graphic file (type png)
+
+<use img/flowchart-calibration.png>
+Package pdftex.def Info: img/flowchart-calibration.png used on input line 12.
+(pdftex.def)             Requested size: 277.83308pt x 481.79147pt.
+
+<img/flowchart-windspeedcheck.png, id=40, 1400.23125pt x 1505.625pt>
+File: img/flowchart-windspeedcheck.png Graphic file (type png)
+
+<use img/flowchart-windspeedcheck.png>
+Package pdftex.def Info: img/flowchart-windspeedcheck.png used on input line 17
+.
+(pdftex.def)             Requested size: 280.04129pt x 301.11966pt.
+ [7 <./img/flowchart-outline.png (PNG copy)>]
+<img/flowchart-communication-bluetooth.png, id=44, 1829.83624pt x 1649.16125pt>
+File: img/flowchart-communication-bluetooth.png Graphic file (type png)
+<use img/flowchart-communication-bluetooth.png>
+Package pdftex.def Info: img/flowchart-communication-bluetooth.png used on inpu
+t line 22.
+(pdftex.def)             Requested size: 365.96077pt x 329.8264pt.
+ [8 <./img/flowchart-calibration.png>] [9 <./img/flowchart-windspeedcheck.png>]
+ [10 <./img/flowchart-communication-bluetooth.png>]) [11
+
+]
+<sections/poster_aerobal_v2.pdf, id=62, page=1, 614.295pt x 794.97pt>
+File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+
+<use sections/poster_aerobal_v2.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+ne 58.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+
+<use sections/poster_aerobal_v2.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+ne 58.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+
+<use sections/poster_aerobal_v2.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+ne 58.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+
+<use sections/poster_aerobal_v2.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+ne 58.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+
+<use sections/poster_aerobal_v2.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+ne 58.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [12 <./sections/poster_aerobal_v2.pdf>] (./phase02.aux) ) 
 Here is how much of TeX's memory you used:
- 2527 strings out of 493488
- 35649 string characters out of 3141348
- 97247 words of memory out of 3000000
- 5771 multiletter control sequences out of 15000+200000
+ 3781 strings out of 493488
+ 53912 string characters out of 3141348
+ 123957 words of memory out of 3000000
+ 6992 multiletter control sequences out of 15000+200000
  14567 words of font info for 55 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,32p,744b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
-.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
-pfb>
-Output written on phase02.pdf (9 pages, 494448 bytes).
+ 39i,18n,45p,744b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on phase02.pdf (13 pages, 4199372 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 329 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

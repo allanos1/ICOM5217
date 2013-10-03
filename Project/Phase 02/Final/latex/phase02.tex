@@ -27,6 +27,10 @@
 %Page margin change.
 \usepackage[margin=1.0in]{geometry}
 
+
+%PDFs
+\usepackage{pdfpages}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configuration
 \title{	
@@ -50,6 +54,8 @@
 	\input{sections/bdiagramv2.tex}
 	\input{sections/mcuselection.tex}
 	\input{sections/operatingchart.tex}
+	\part*{Poster}
+	\includepdf[pages={1}]{sections/poster_aerobal_v2.pdf}
 	%\input{sections/specs.tex}
 	
 \end{document}

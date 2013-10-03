@@ -6,13 +6,17 @@
 	
   	\item \textbf{Data Bit Length} - \textit{Aerobal} will be doing constant calculations and transmission of data. In theory, the data  the system will process will not be excessively large. Therefore, the group thought that 16 bits should be enough. \textit{Warning}: We will use a prototype miniature wind tunnel in the lab. \textit{Aerobal} will work with out model, which will have a small home fan. It should work just as well with the wind tunnel in the Wind Tunnel Laboratory. However, we are aware that the data in the real wind tunnel will be bigger than the one we get in the lab. For this reason, more than 16 bits might be good just to make sure we have enough space.
   	
- 	\item \textbf{Universal Asynchronous Receiver Transmitter (UART) Pins} - \textit{Aerobal} needs two UART pins. One for Bluetooth connectivity, and another one for the LCD screen. 
+ 	  \item \textbf{Universal Asynchronous Receiver Transmitter (UART) Pins} - \textit{Aerobal} needs two UART pins. One for Bluetooth connectivity, and another one for the LCD screen. 
  	
   	\item \textbf{$I^2C$ Pins} - We need an MCU with $I^2C$ pins to interface with the barometric pressure sensor. Two pins should suffice.
   	
- 	\item \textbf{Clock Speed} - Our slowest component will be the temperature sensor, which we have seen usually run at around $ 10\mu s $. Thus, we need an MCU that has a clock speed of at least $ 1 /  10\mu s = 100kHz$. 
+ 	  \item \textbf{Clock Speed} - In this revision it is worthwhile to mention that the Timing Analysis has been done in the following phase and it was determined that a functional clock speed for the Microprocessor would be about 1 Mhz since the highest baud rate 921600 attainable by the bluetooth module required a clock of (921600 * 8) ~ MHz (if the factor 8 is used). If a higher factor is used then @ (921600 * 64) the clock requirement would need to reach ~60Mhz, and of course, this is worse-case.
+
+    Functional Case: ~ 1 MHz at least.
+
+    Worst Case: ~ 60 Mhz at least.
  	
-  	\item \textbf{Analog-to-digital Converters (ADC)} - The wind vane and load sensors both are analog and need analog-to-digital converters to work with our MCU. Ideally, we would need four converters because there is one vane sensor and three load sensors. If not, then we would have to multiplex one of the converters.
+  	\item \textbf{Analog-to-digital Converters (ADC)} - The wind vane and load sensors both are analog and need analog-to-digital converters to work with our MCU. Ideally, we would need four converters because there is one vane sensor and three load sensors. If not, then we would have to multiplex one of the converters. The resolution of these analog to digital converters will be of 12-bits.
   	
   	\item \textbf{General Purpose Input/Output Pins (GPIO)} - The following components of our embedded systems are connected through GPIO: 
   	\begin{enumerate}  	
@@ -26,7 +30,7 @@
   	
   	Thus, we will probably need more than 6 GPIO's for \textit{Aerobal}. 
   	
-	\item \textbf{Cost} - Besides the cost of the MCU, we also need to consider if we wanted to have a JTAG debugger. This was a huge factor, because not many MCU's come in a board (or a "launchpad") with an integrated JTAG debugger. Thus, if it does not come with it, we would need to buy a development board to have this functionality. 
+	\item \textbf{Cost} - Besides the cost of the MCU, we also need to consider if we wanted to have a JTAG debugger. This was a huge factor, because not many MCU's come in a board (or a \"launchpad\") with an integrated JTAG debugger. Thus, if it does not come with it, we would need to buy a development board to have this functionality. 
 	
 	\item \textbf{FLASH and RAM} - Although having big amounts of memory in our system is always great to have, it is not something we necessarily need. The MCU we select should be able to do all of it's processing with 8 kB of RAM. As of right now, we do not have any plans of storing data in FLASH memory. 
 	
