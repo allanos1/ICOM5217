@@ -1,0 +1,107 @@
+\section{Software Plan}
+	
+	\subsection{Pseudo-code}
+		\underline{\textbf{General System Outline}} 
+
+		Describes the general procedure the system follows.
+		
+		\begin{framed}
+		\begin{alltt} 
+			        \color{fushia}WHILE TRUE\color{black}
+			            Display Prompt to Start Setup
+			            Wait for Confirm Signal
+			            Execute Calibrate System Procedure
+			            Display Prompt to Set Objet and Set Wind Tunnel Settings
+			            Wait for Confirm Signal
+			            Execute Wind Speed Check Procedure
+			            \color{fushia}WHILE \color{black}finish signal has not been received
+			                \color{fushia}IF\color{black} store button is pressed
+			                    Store Values from Sensors
+			                \color{fushia}ENDIF\color{black}
+			            \color{fushia}ENDWHILE\color{black}
+			            Perform Mean Calculations of Forces
+			            Display Results onto Tablet/LCD
+			        \color{fushia}ENDWHILE\color{black}
+		\end{alltt}
+		\end{framed}
+
+		\underline{\textbf{Calibrate System}}
+
+		Calibrates the system with the initial values the strain sensor convey to use as initial reference point.
+		\begin{framed}
+		\begin{alltt}	 
+			        Display Prompt to Setup and Start
+			        Wait for Confirm Signal
+			        Store First Calibration Values
+			        Prompt to Configure Wind Tunnel Before Starting Fan
+			        Wait for Confirm Signal
+			        Enable Wind Tunnel Fan
+			        Execute Wind Speed Check Procedure
+			        Store Second Calibration Values
+			        Display Prompt to Disable Wind Tunnel Fan
+			        Wait for Confirm Signal
+			        Disable Wind Tunnel Fan
+			        Display Prompt to Place Object
+			        Wait for Confirm Signal
+			        Store Last Calibration Values
+		\end{alltt}
+		\end{framed}
+
+		\underline{\textbf{Bluetooth Communication}}
+
+		Procedure for pairing, control, and transfer of data through the bluetooth module.
+		\begin{framed}
+		\begin{alltt}
+			        Configure Bluetooth Settings
+			        Wait for Pair Request
+			        \color{fushia}WHILE TRUE\color{black}
+			            Send Data to Paired Device
+			            Process Received Data
+			            \color{fushia}IF\color{black} Command Data was received
+			                Execute Command that was received
+			            \color{fushia}ENDIF\color{black}
+			        \color{fushia}ENDWHILE\color{black}
+		\end{alltt}
+		\end{framed}
+		\underline{\textbf{Wind Speed Checker}}
+		
+		Procedure for calibration of the desired speed of the system.
+		\begin{framed}
+		\begin{alltt}	 
+			        \color{fushia}WHILE\color{black} Speed value isn’t acceptable (within value + threshold)
+			            Verify Wind Speed Value from Anemometer
+			        \color{fushia}ENDWHILE\color{black}
+			        Initiate Counter
+			        \color{fushia}WHILE\color{black} counter < counter limit
+			            Verify Wind Speed
+			            \color{fushia}IF\color{black} Wind Speed has not gone over or under threshold
+			                Increase Counter
+			            \color{fushia}ELSE\color{black}
+			                Restart Procedure
+			            \color{fushia}ENDIF\color{black}
+			        \color{fushia}ENDWHILE\color{black}
+		\end{alltt}
+		\end{framed}
+
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.25]{img/flowchart-outline}
+		\caption{The general/main system procedure flowchart.}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.25]{img/flowchart-calibration}
+		\caption{The calibration procedure of the system.}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.25]{img/flowchart-windspeedcheck}
+		\caption{The wind speed check procedure.}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.25]{img/flowchart-communication-bluetooth}
+		\caption{The communication procedure of the system.}
+	\end{figure}
+
+\newpage

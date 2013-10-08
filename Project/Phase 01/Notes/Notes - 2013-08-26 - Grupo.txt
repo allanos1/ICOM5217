@@ -1,0 +1,54 @@
+Specifications:
+
+Hardware:
+    El sistema debe proveer equilibrio de manera autónoma bajo dos condiciones:
+	• el sistema esta bajo efectos aerodinámicos 
+	• el sistema no esta bajo efectos aerodinámicos.
+    El sistema debe poder obtener los datos de fuerza que estarían actuando sobre la balanza. (Digital Scale)
+    El sistema debe proveer lectura de las fuerzas que están actuando en los componentes y los objetos del mismo.
+    El sistema debe leer el “tilt” en mínimo 2 ejes:
+Vertical
+1 Eje Horizontal
+    El sistema debe recolectar medidas y proveer los datos a traves de una coneccion USB y/o SD Card. 
+
+Software:
+    Una aplicación debe poder interactuar con el sistema por medio de USB de manera que reciba, interprete y muestre los resultados de las pruebas.
+
+LCD - UI
+Motores - Micro
+Accelerometro (2-3 ejes) - Micro
+(Force Sensor) Scalas - Micro
+LED - UI
+Buttons - UI, Control Scheme
+Serial USB interface
+
+Tentative:
+Android App
+SD Card - compatible
+
+
+Comunicación:
+	El sistema se comunicará con una aplicación que lea, interprete y muestre los resultados. Esta comunicacion sera a traves de una interfaz USB o por medio de almacenamiento generico. 
+
+UI:
+	El sistema proveerá un user interface por medio de la aplicación proveida/provista. Esta aplicación permitirá al usuario iniciar una lectura de datos de tal manera que los mismos sean guardados en un sistema externo. Una vez leídos, estos datos se mostraran en el sistema de la manera que el usuario pueda leer y analizar los mismos.
+
+Control Scheme:
+	El sistema proveerá control de todos sus componentes que contribuyen a mantener el equilibro del mismo. Esto debe ser posible bajo condiciones normales y de pruebas aerodinámicas. Se proveerán unos botones de tal manera que el usuario pueda manualmente tomar control del sistema sin necesidad de interacción física con la balanza.
+
+Microprocessor-based:
+	El microprocesador es necesario para el aspecto de proveer control como función de las lecturas llevadas a cabo por los sensores para así poder equilibrar el sistema. El microprocesador debe controlar el despliegue de la información en la pantalla y podrá tomar acción a base de las entradas del usuario.
+
+
+Partes:
+
+I.Introduction - Jean
+II. System Architecture - Juan
+III. Specifications - Almost Done - Anthony
+IV. System Conception - Juan & Anthony
+V. Market Description - Jesús
+VI. Design Criteria - Anthony
+VII Project Time Table - Juan, Jesús y Jean
+VIII. Expert Opinion - Beauchamp, Eduardo Ortiz
+IX. References -  					// Esta parte se hace al final
+X. Appendices  - 					// Esta parte se hace al final

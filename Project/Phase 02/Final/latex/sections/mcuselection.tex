@@ -1,0 +1,71 @@
+\section{MCU Selection}
+	For the selection of our microcontroller, we started by considering various factors. These were: 
+	
+	\begin{itemize}
+	\item \textbf{Architecture} - At first we did not consider the architecture was a factor we should heavily worry about. However, once we realized the labs of the course will be made exclusively with assembly language (ASM), we had to verify how said language varied between architectures. The ASM of the ARM architecture is different from that of the MSP430 architecture, so we had to learn various things of the language if we wanted to select an MCU with ARM architecture. 	
+	
+  	\item \textbf{Data Bit Length} - \textit{Aerobal} will be doing constant calculations and transmission of data. In theory, the data  the system will process will not be excessively large. Therefore, the group thought that 16 bits should be enough. \textit{Warning}: We will use a prototype miniature wind tunnel in the lab. \textit{Aerobal} will work with out model, which will have a small home fan. It should work just as well with the wind tunnel in the Wind Tunnel Laboratory. However, we are aware that the data in the real wind tunnel will be bigger than the one we get in the lab. For this reason, more than 16 bits might be good just to make sure we have enough space.
+  	
+ 	  \item \textbf{Universal Asynchronous Receiver Transmitter (UART) Pins} - \textit{Aerobal} needs two UART pins. One for Bluetooth connectivity, and another one for the LCD screen. 
+ 	
+  	\item \textbf{$I^2C$ Pins} - We need an MCU with $I^2C$ pins to interface with the barometric pressure sensor. Two pins should suffice.
+  	
+ 	  \item \textbf{Clock Speed} - In this revision it is worthwhile to mention that the Timing Analysis has been done in the following phase and it was determined that a functional clock speed for the Microprocessor would be about 1 Mhz since the highest baud rate 921600 attainable by the bluetooth module required a clock of (921600 * 8) ~ MHz (if the factor 8 is used). If a higher factor is used then @ (921600 * 64) the clock requirement would need to reach ~60Mhz, and of course, this is worse-case.
+
+    Functional Case: ~ 1 MHz at least.
+
+    Worst Case: ~ 60 Mhz at least.
+ 	
+  	\item \textbf{Analog-to-digital Converters (ADC)} - The wind vane and load sensors both are analog and need analog-to-digital converters to work with our MCU. Ideally, we would need four converters because there is one vane sensor and three load sensors. If not, then we would have to multiplex one of the converters. The resolution of these analog to digital converters will be of 12-bits.
+  	
+  	\item \textbf{General Purpose Input/Output Pins (GPIO)} - The following components of our embedded systems are connected through GPIO: 
+  	\begin{enumerate}  	
+  	\item Wind Speed Actuator
+  	\item Anemometer Sensor
+  	\item Humidity Sensor
+  	\item LED's of User Interface
+  	\item Buttons of User Interface
+
+  	\end{enumerate}
+  	
+  	Thus, we will probably need more than 6 GPIO's for \textit{Aerobal}. 
+  	
+	\item \textbf{Cost} - Besides the cost of the MCU, we also need to consider if we wanted to have a JTAG debugger. This was a huge factor, because not many MCU's come in a board (or a \"launchpad\") with an integrated JTAG debugger. Thus, if it does not come with it, we would need to buy a development board to have this functionality. 
+	
+	\item \textbf{FLASH and RAM} - Although having big amounts of memory in our system is always great to have, it is not something we necessarily need. The MCU we select should be able to do all of it's processing with 8 kB of RAM. As of right now, we do not have any plans of storing data in FLASH memory. 
+	
+\end{itemize}		
+	
+	
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+& Tiva & MSP430F5528 & PIC & Piccolo TMS320C2000 \\
+\hline
+Architecture & ARM & MSP430 & PIC & C28x \\ 
+Data Bit Length & 32 & 16 & 16 & 32\\ 
+UART Pins & 8 & 2 & 2 & 1 \\ 
+$I^2C$ Pins & 4 & 2 & 2 & 1 \\ 
+Clock Speed & 80 MHz & 25 MHz & 7.37 MHz & 100MHz \\ 
+ADC's & 2 & 1 & 2 & 1\\ 
+GPIO & 43 & 47 & 85 & 35 \\ 
+Cost (w/ JTAG) & \$13 & \$175 & \$155 & \$100 \\ 
+RAM & 32kB & 8kB & 16kB & 12kB \\ 
+FLASH & 256kB & 128kB & 256kB & 64kB \\ 
+
+
+\hline
+\end{tabular} \\ \\
+
+After considering all the points mentioned above, it is clear that our best option would be the Tiva C Series MCU. Primarily, it come with a JTAG debugger in it's launchpad (unlike the MSP 430), so we don't need to spend \$149 on it's development board. Besides that, it also has more bits, more pins, higher clock speed, and more converters than most of the other options. \\
+
+We add to that it's price of \$13, so we can buy various MCU's in case we have accidentally burn the ones we have. Our main problem with this model is it's ARM architecture, so programming it in ASM will not be as easy as it would have been with the MSP 430. \\
+
+\textbf{MCU Selected: Tiva C Series TM4C123GE6PM}
+
+
+
+\newpage
+
+
+
+

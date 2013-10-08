@@ -1,0 +1,6 @@
+HD44780 Controlled LCD
+http://joshuagalloway.com/lcd.html
+
+
+LCD Commands
+http://www.geocities.com/dinceraydin/lcd/commands.htm

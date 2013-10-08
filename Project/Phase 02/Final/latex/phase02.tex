@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Begin Document: name.tex
+\documentclass[12pt,letterpaper]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Imports and Commands
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%Images
+\usepackage{graphicx}
+\usepackage{float}
+
+%URLs
+\usepackage{url}
+
+%Change numbering for report style. 
+%Eliminates need for part and chapter.
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+%Changes Bibliography title to 'References'
+%\renewcommand{\bibname}{References}
+
+%Page margin change.
+\usepackage[margin=1.0in]{geometry}
+
+
+%PDFs
+\usepackage{pdfpages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuration
+\title{	
+	Progress Report \#2
+}	
+
+
+\date{September 12, 2013}
+\author{Anthony Llanos (Leader)\\ Jes\'{u}s Luz\'{o}n \\ Juan Lebr\'{o}n \\ Jean C. M\'{e}ndez}
+
+
+%Header Settings.
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin output of Document
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	\input{sections/bdiagramv2.tex}
+	\input{sections/mcuselection.tex}
+	\input{sections/operatingchart.tex}
+	\part*{Poster}
+	\includepdf[pages={1}]{sections/poster_aerobal_v2.pdf}
+	%\input{sections/specs.tex}
+	
+\end{document}

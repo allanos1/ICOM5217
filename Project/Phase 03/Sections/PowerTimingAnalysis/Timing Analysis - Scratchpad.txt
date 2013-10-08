@@ -1,0 +1,92 @@
+Specs:
+
+Timing Analysis
+| - Time compatibility in signal between Components.
+| - Minimum Pulse Width required for function.
+|
+| Document System Clock Selection
+| - RTC ?
+| - How much error does the clock 
+|   generate on baud rate?
+| - Baud Rates for async communication.
+
+===================================
+= Research - Minimum Pulse Width
+===================================
+
+Components:
+
+• BMP085 - 3.4Mhz Max for I2C
+| 
+| Max: ~3.4 Mhz	
+|
+|
+
+• Fan Sensor Speed Dependent on rotation.
+|	- Worst Case:
+|			Rotation speed in datasheets = 
+|			4500 rpm @ 2 pulses per revolution 
+|			= 9000 pulses per minute 
+|			= 9000ppm/60 = 150pps max. = 150Hz
+|	Max: 150Hz
+
+
+• Bluetooth Module
+| - To achieve UART Communication the clock is normally about 8, 16, 32, 64 times
+|   the baud rate.
+| - Baud Rate: 9600bps = 9600b/s = 9600 Hz
+|	Established: 9.6Khz
+|	- Max: 9.6 Khz * 8 = 76.8 Khz
+| - Maximum Configurable Safe Baud: 921.6 Kbps
+|	Resulting frequency ~ 1Mhz
+|
+| 	- Max: < 1 Mhz * 8 = 8 Mhz (But Tiva has not been tested for this baud rate)
+|
+|
+| - TI does not yet have a Baud Rate error table compiled for the Tiva Microprocessor
+| but has a Performance Limitation table that detailes the attainable and acceptable
+| baud rate-clock combinations that deliver a successful UART communication. Maximum baud
+| rate tested in this table is 115200bps, and the minimum clock frequency at which this
+| baud is attainable for both Transmit and Receive according to the Performance Limitation
+| table is 20 Mhz. [Reference]
+| - This makes the clock rate greater than 64 times the baud rate 
+| (115200 bps * 64 = ~ 7.4 Mhz)
+| - Due to the limitation of the Baud Rate error table, the error that the clock causes
+| on the baud rate cannot be shown here.
+
+
+• LCD
+| - The specifications inidicate that the MCU must correspond/conform to a 2Mhz bus interface.
+| - Means the frequency for interfacing is 2Mhz. It can be slower than this however.
+| - 1/(2Mhz)= 0.5 us 
+| 		Max: 2Mhz
+|
+
+
+• Humidity and Temperature Sensor
+| - 18ms Start Signal ACK
+| - 20-40us MCU Pull Up Voltage ACK
+| 	- 80 us low-v-level response signal.
+|	- 80 us high-v-level preparation signal.
+|		- 50 us 	low-v-level means start bit transmit.
+|		- 26-28 us	high-v-level is 0.
+|		- 70 us 	high-v-level is 1.
+|			- 50 us		low-v-level means end.
+|
+| For Fastest Operation we would need:
+| 	20 us
+| 	f = 1/20us = 1/(2x10^-7) = 50Khz
+
+
+Hence the worst-case minimum pulse width is: 50ns
+Source: Tiva w/ Bluetooth Module @ 115.2 Kbps Baud 
+			-> 20 Mhz Frequency
+Processor must have a minimum frequency of:
+	20 Mhz < 80Mhz = Tiva Frequency
+
+
+A functional minimum pulse width
+Source: Tiva w/ Bluetooth Module @ 9.6 Kbps Baud 
+			-> 8 Mhz Frequency
+This forces the processor to have a minimum frequency of:
+	8 Mhz <  80Mhz = Tiva Frequency

@@ -1,0 +1,77 @@
+  	
+
+  	//
+    // Enable lazy stacking for interrupt handlers.  This allows floating-point
+    // instructions to be used within interrupt handlers, but at the expense of
+    // extra stack usage.
+    //
+    ROM_FPULazyStackingEnable();
+
+        //
+    // Set the clocking to run directly from the crystal.
+    //
+    ROM_SysCtlClockSet(SYSCTL_SYSDIV_1 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN |
+                       SYSCTL_XTAL_16MHZ);
+
+    //
+    // Enable the peripherals used by this example.
+    //
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
+
+
+       //
+    // Configure the PB0-PB2 to be outputs to indicate entry/exit of one
+    // of the interrupt handlers.
+    //
+    ROM_GPIOPinTypeGPIOOutput(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 |
+                                               GPIO_PIN_3);
+    ROM_GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 0);
+
+
+    /
+    // Set up and enable the SysTick timer.  It will be used as a reference
+    // for delay loops in the interrupt handlers.  The SysTick timer period
+    // will be set up for one second.
+    //
+    ROM_SysTickPeriodSet(ROM_SysCtlClockGet());
+    ROM_SysTickEnable();
+
+    //
+    // Reset the error indicator.
+    //
+    ui32Error = 0;
+
+    //
+    // Enable interrupts to the processor.
+    //
+    ROM_IntMasterEnable();
+
+    //
+    // Enable the interrupts.
+    //
+    ROM_IntEnable(INT_GPIOA);
+    ROM_IntEnable(INT_GPIOB);
+    ROM_IntEnable(INT_GPIOC);
+
+        //
+    // Set the interrupt priorities so they are all equal.
+    //
+    ROM_IntPrioritySet(INT_GPIOA, 0x00);
+    ROM_IntPrioritySet(INT_GPIOB, 0x00);
+    ROM_IntPrioritySet(INT_GPIOC, 0x00);
+
+
+    /////////////////////////////////////
+
+    //
+    // Disable the interrupts.
+    //
+    ROM_IntDisable(INT_GPIOA);
+    ROM_IntDisable(INT_GPIOB);
+    ROM_IntDisable(INT_GPIOC);
+
+    //
+    // Disable interrupts to the processor.
+    //
+    ROM_IntMasterDisable();
+

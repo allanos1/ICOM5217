@@ -1,0 +1,15 @@
+• Ordering DS1305 for Labs.
+• Strain Gauge Research
+• Digital Control Primer Research
+• Pillow Block Bearing
+• Design mini-Wind Tunnel prototype.
+• MCU Selection
+• Design Block Diagram
+| - Title
+| - Description
+| - Group Photo
+| - Block Diagram v2
+• Wind Tunnel Motor Specifications and Interfacing research.
+
+• Setup meeting with Zapata
+• Setup Meeting with Manuel.
