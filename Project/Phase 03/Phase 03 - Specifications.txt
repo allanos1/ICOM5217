@@ -1,0 +1,49 @@
+Phase 03 - Specifications
+
+Schematics, Part list, Timing & Power analysis, 
+BDv3, Software Plan, Final Poster
+
+---
+
+Schematics
+| - Orcad
+| - Not only electric, but also mechanical aspects.
+
+Bill of Materials (Part List)
+| - automatic from developing schematics
+
+Power Analysis Components
+| - Power Supply Requirements
+| 		Voltage
+|		Current
+|		Driving Capability
+|			Max Pin Current (loads)
+|
+| - Voltage Compatibility
+|		(different voltages)
+|
+| - Power Components
+|		Thermal Analysis
+|		Power Supply Capacity
+|
+
+
+Timing Analysis
+| - Time compatibility in signal between Components.
+| - Minimum Pulse Width required for function.
+|
+| Document System Clock Selection
+| - RTC ?
+| - How much error does the clock 
+|   generate on baud rate?
+| - Baud Rates for async communication.
+
+Software Plan
+| - Fix flowchart
+| - pseudo-code for modularized flowchart,
+|   along with documentation.
+
+
+Final Poster
+| - Fix.
+
