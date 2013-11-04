@@ -75,7 +75,7 @@
 
 		\subsubsection{Current}
 
-			The following table summarizes the values of the currents of each one of our components. 
+			The following table summarizes the values of the currents of each one of our components. Although a 4mA pin current seems a little high, it is an accurate number according to page 1353 of the TM4C123GH6PM datasheet, \emph{Recommended Operating Conditions} section. The current might vary depending on how much current it is driving. However, when in deep sleep mode, the current might get as low as 0.28 mA. This is according to page 1390 of the datasheet, section \emph{Current Consumption}.
 
 			\begin{tabular}{|c|c|c|c|}
 				\hline
@@ -163,23 +163,23 @@
 
 		According to the datasheets:
 
-				$$T_{J(max)} = 150 C$$
+				$$T_{J(max)} = 96 C$$
 				
 				$$T_{A} = 25 C$$
 
 				$$\theta_{JA}=54.8 C/W$$
 
-				$$P_{diss(max)}=(150C-25C) / 54.8 = 2.28 W $$
+				$$P_{diss(max)}=(96C-25C) / 54.8 = 1.2956 W $$
 
 		Hence, 2.28 W is the maximum power dissipation of the microprocessor.
 
-		The current required by the processor while running at full speed 80MHz with V$_{DD}$ = 3.3V and ambient temperature 25C is 45.1mA. The current required from GPIO devices is 51.9mA in total. The total current is then
+		The current required by the processor while running at full speed 80MHz with V$_{DD}$ = 3.3V and ambient temperature 25C is 45.1mA. The current required from GPIO components is 51.9mA in total. The total current is then
 
 			$$I_{DD(avg)} + \sum_{allpins}^{} c_i = 45.1mA + 51.9mA = 97 mA$$
 
 		Multiply by voltage level V$_{DD}$ = 3.3V:
 
-			$$P_{diss}= 3.3V * 97mA = 320 mW < P_{diss(max)}= 2.28 W $$
+			$$P_{diss}= 3.3V * 97mA = 320 mW < P_{diss(max)}= 1.2956 W $$
 
 		Therefore our system complies with the thermal limitations of the chip and it is safe to use for the application.
 

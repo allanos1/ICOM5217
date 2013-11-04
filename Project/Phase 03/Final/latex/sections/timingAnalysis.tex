@@ -20,7 +20,10 @@
 
 			$$Minimum Pulse Width = 1/(3.4MHz) = ~0.29us$$
 
-	
+
+			To configure the clocking for this peripheral (I2C) one does only need to set its timer period in the registers. There are four available speeds: Standard (100Kbps), Fast (400Kbps), Fast-plus (1Mbps) and High Speed (3.33Mhz per second). Since the Tiva provides the clocking (or acts as the master), this speed is set by the MCU. As mentioned above, the BMP085 can withstand any of these modes in the configuration. Since the amount of data read from the BMP085 is small (5 registers per computation) this would leave us with ((100K/8)/5) = 2.5K reads per second of all data required at the lowest frequency.
+
+
 		\subsubsection{US-1881 - Hall-Effect Sensor for Fan Anemometer}
 			A fan will be used to work as an anemometer for the system. The fan only requires the blades to spin to be detected by a sensor that is contained within them. This sensor sends two pulses per rotation. Hence the rotation at which the anemometer turns determines the working frequency of the component.
 
@@ -33,6 +36,7 @@
 
 			$$Minimum Pulse Width = 1/(150Hz) = 6.67 ms$$
 
+			A timer here is used to keep track of time per pulse. This can be done by setting a timer that runs on a millisecond basis (1kHz), such that we can calculate the deltas in time between pulses.
 
 		\subsubsection{EGBT-045 - Bluetooth Module}
 			To achieve UART Communication the clock of the MCU is set to 8, 16, 32, and 64 times higher than the baud rate.This module can be configure to read a baud rate of 921600 although 9600 is the default. 
@@ -87,7 +91,7 @@
 		This system requires the use of a real-time clock to be able to keep track of time in human units since calculations are made that use units of time (seconds), for example, the speed of the wind. which is measured
 		in either kilometers per second or miles per second.
 
-		An external 32.768KHz clock can be used as input to allow the use of real-time clocks in the Tiva Microprocessor.
+		The Tiva Contains an internal real-time clock which can be used in software for this purpose.
 
 	\subsection{Baud-Error}
 		Due to the limitation of the Baud Rate error table not being available for the Tiva (substituted by UART Performance Limitation), the error that the clock causes on the baud rate cannot be shown here.
@@ -97,7 +101,6 @@
 
 	\subsection{System Clock Selection}
 		Hence the \textbf{worst-case} minimum pulse width is: 
-
 					$$ 50ns $$
 
 		\noindent \textbf{Source}: Tiva w/ Bluetooth Module @ 115.2 Kbps Baud

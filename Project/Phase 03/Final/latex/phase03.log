@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  3 OCT 2013 13:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.8)  29 OCT 2013 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,12 +359,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
  []
 
 
-Overfull \hbox (42.84045pt too wide) in paragraph at lines 5--36
+Overfull \hbox (15.09045pt too wide) in paragraph at lines 5--38
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--36
+Underfull \hbox (badness 10000) in paragraph at lines 5--38
 
  []
 
@@ -443,22 +443,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--96
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 128--140
 
  []
@@ -473,81 +473,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--205
 
  []
 
-[10]) (./sections/timingAnalysis.tex [11] [12] [13])
+[10] [11]) (./sections/timingAnalysis.tex [12] [13] [14] [15])
 (./sections/softwarePlan.tex
 LaTeX Font Info:    Try loading font information for OT1+txtt on input line 9.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-) [14]
+) [16]
 Missing character: There is no â in font txtt!
 Missing character: There is no € in font txtt!
 Missing character: There is no ™ in font txtt!
 
-<img/flowchart-outline.png, id=82, 1844.8925pt x 2363.83125pt>
+<img/flowchart-outline.png, id=88, 934.49126pt x 1184.425pt>
 File: img/flowchart-outline.png Graphic file (type png)
 
 <use img/flowchart-outline.png>
 Package pdftex.def Info: img/flowchart-outline.png used on input line 88.
-(pdftex.def)             Requested size: 461.222pt x 590.95638pt.
+(pdftex.def)             Requested size: 373.78989pt x 473.76161pt.
 
-<img/flowchart-calibration.png, id=83, 1389.19pt x 2409.0pt>
+<img/flowchart-calibration.png, id=89, 844.15375pt x 1565.85pt>
 File: img/flowchart-calibration.png Graphic file (type png)
 
 <use img/flowchart-calibration.png>
 Package pdftex.def Info: img/flowchart-calibration.png used on input line 93.
-(pdftex.def)             Requested size: 347.29665pt x 602.24854pt.
- [15]
-<img/flowchart-windspeedcheck.png, id=87, 1400.23125pt x 1505.625pt>
+(pdftex.def)             Requested size: 337.65552pt x 626.32892pt.
+ [17]
+<img/flowchart-windspeedcheck.png, id=93, 755.82375pt x 1053.9375pt>
 File: img/flowchart-windspeedcheck.png Graphic file (type png)
 
 <use img/flowchart-windspeedcheck.png>
 Package pdftex.def Info: img/flowchart-windspeedcheck.png used on input line 98
 .
-(pdftex.def)             Requested size: 350.05696pt x 376.40533pt.
- [16 <./img/flowchart-outline.png (PNG copy)>]
-<img/flowchart-communication-bluetooth.png, id=91, 1829.83624pt x 1649.16125pt>
+(pdftex.def)             Requested size: 302.32414pt x 421.56754pt.
+ [18 <./img/flowchart-outline.png>]
+Overfull \vbox (2.73222pt too high) has occurred while \output is active []
+
+
+[19 <./img/flowchart-calibration.png>]
+<img/flowchart-communication-bluetooth.png, id=103, 816.04875pt x 823.075pt>
 File: img/flowchart-communication-bluetooth.png Graphic file (type png)
+
 <use img/flowchart-communication-bluetooth.png>
 Package pdftex.def Info: img/flowchart-communication-bluetooth.png used on inpu
 t line 103.
-(pdftex.def)             Requested size: 457.45795pt x 412.2893pt.
- [17 <./img/flowchart-calibration.png>] [18 <./img/flowchart-windspeedcheck.png
->] [19 <./img/flowchart-communication-bluetooth.png>]) [20
+(pdftex.def)             Requested size: 326.41371pt x 329.22417pt.
+ [20 <./img/flowchart-windspeedcheck.png>] [21 <./img/flowchart-communication-b
+luetooth.png>]) [22
 
 ]
-<sections/poster_aerobal_v2.pdf, id=110, page=1, 614.295pt x 794.97pt>
-File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+<sections/poster_aerobal_v3.pdf, id=117, page=1, 614.295pt x 794.97pt>
+File: sections/poster_aerobal_v3.pdf Graphic file (type pdf)
 
-<use sections/poster_aerobal_v2.pdf, page 1>
-Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+<use sections/poster_aerobal_v3.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v3.pdf, page1 used on input li
 ne 73.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+File: sections/poster_aerobal_v3.pdf Graphic file (type pdf)
 
-<use sections/poster_aerobal_v2.pdf, page 1>
-Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+<use sections/poster_aerobal_v3.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v3.pdf, page1 used on input li
 ne 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+File: sections/poster_aerobal_v3.pdf Graphic file (type pdf)
 
-<use sections/poster_aerobal_v2.pdf, page 1>
-Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+<use sections/poster_aerobal_v3.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v3.pdf, page1 used on input li
 ne 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+File: sections/poster_aerobal_v3.pdf Graphic file (type pdf)
 
-<use sections/poster_aerobal_v2.pdf, page 1>
-Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+<use sections/poster_aerobal_v3.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v3.pdf, page1 used on input li
 ne 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: sections/poster_aerobal_v2.pdf Graphic file (type pdf)
+File: sections/poster_aerobal_v3.pdf Graphic file (type pdf)
 
-<use sections/poster_aerobal_v2.pdf, page 1>
-Package pdftex.def Info: sections/poster_aerobal_v2.pdf, page1 used on input li
+<use sections/poster_aerobal_v3.pdf, page 1>
+Package pdftex.def Info: sections/poster_aerobal_v3.pdf, page1 used on input li
 ne 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [21 <./sections/poster_aerobal_v2.pdf>] (./phase03.aux)
+ [23 <./sections/poster_aerobal_v3.pdf>] (./phase03.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -555,11 +560,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3878 strings out of 493488
  55513 string characters out of 3141348
- 127749 words of memory out of 3000000
+ 128761 words of memory out of 3000000
  7074 multiletter control sequences out of 15000+200000
  14322 words of font info for 54 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,18n,45p,529b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,18n,45p,661b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -570,10 +575,10 @@ ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
 l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/public/txfonts/txtt.pfb>
-Output written on phase03.pdf (22 pages, 4288318 bytes).
+Output written on phase03.pdf (24 pages, 3936765 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
+ 290 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

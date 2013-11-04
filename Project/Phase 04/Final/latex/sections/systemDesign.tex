@@ -1,0 +1,21 @@
+\section{System Design Changes}
+
+	The system design has changed in two of the components being used for the Aerobal System:
+
+	\begin{itemize}
+		\item Stepper Motor
+		\item Anemometer
+	\end{itemize}
+
+	The \textbf{Stepper Motor} has been changed for a more powerful \textbf{Servo Motor} which uses 6V and the primary reason for choosing this component was to provide more control to the window system. The previous stepper motor had not enough strength for moving the windows and the time of implementation. Hence, more components were searched and even though a more powerful stepper motor was a possibility, it was found that the servo motor had a controller interface through which you could provide the desired angle of the servo.\\
+
+
+	The \textbf{Anemometer} has been implemented using \emph{voltage measurement} instead of the \emph{US-1881 hall sensor}. During implementation it was found that it is not as precise as we would like it to be therefore it is possible that this component will be changed in the future, possibly using photosensors as in the course laboratory. The reason for changing the interface was because of difficulty to physically interface with the hall sensor which is inside the structure of the computer fans.
+
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.22]{img/divisioncomponent}
+		\caption{The third version of the AeroBal system block diagram.}
+	\end{figure}
+
+\newpage
