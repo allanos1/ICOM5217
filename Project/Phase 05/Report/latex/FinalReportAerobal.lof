@@ -1,0 +1,29 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Current Mechanical Balance used in the wind tunnel.\relax }}{1}{figure.caption.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Mechanical Balance Tilted.\relax }}{2}{figure.caption.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Wright Brother's Wind Tunnel \cite {ref:wright2}\relax }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {4}{\ignorespaces Example of a simple wind tunnel.\relax }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {5}{\ignorespaces Miniature Airplane used inside a NASA Wind Tunnel. \cite {ref:wright5}\relax }}{4}{figure.caption.6}
+\contentsline {figure}{\numberline {6}{\ignorespaces System Top Level View.\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {7}{\ignorespaces Calibration using weights.\relax }}{6}{figure.caption.8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Balance Concept and its force detection diagram. \cite {ref:wright5}\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {9}{\ignorespaces The final version of the AeroBal system block diagram.\relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagram of the memory usage of all of our software, according to Code Composer Studio, during a particular execution.\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {11}{\ignorespaces The general/main system procedure flowchart.\relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {12}{\ignorespaces Calibration flowchart to calibrate the strain gauges.\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {13}{\ignorespaces Wind Speed Checker flowchart.\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Bluetooth Communication checker.\relax }}{20}{figure.caption.15}
+\contentsline {figure}{\numberline {15}{\ignorespaces Bluetooth Communication checker.\relax }}{21}{figure.caption.16}
+\contentsline {figure}{\numberline {16}{\ignorespaces Software Organization Chart of our system.\relax }}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {17}{\ignorespaces The TM4C123G Tiva C Series Launchpad\relax }}{6}{figure.caption.19}
+\contentsline {figure}{\numberline {18}{\ignorespaces Strain Gauges inside the tunnel\relax }}{7}{figure.caption.20}
+\contentsline {figure}{\numberline {19}{\ignorespaces The HC-05 (left) interfaced with the Tiva C (right)\relax }}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {20}{\ignorespaces DHT11 sensor (blue) interfaced with Tiva C and LCD Screen\relax }}{10}{figure.caption.22}
+\contentsline {figure}{\numberline {21}{\ignorespaces C2004A LCD Screen Interfaced with the Tiva C, DHT11, and Strain Gauges.\relax }}{11}{figure.caption.23}
+\contentsline {figure}{\numberline {22}{\ignorespaces Wind Vane sensor used in AeroBal.\relax }}{12}{figure.caption.24}
+\contentsline {figure}{\numberline {23}{\ignorespaces Paper with angles and values used to characterize the sensor.\relax }}{12}{figure.caption.25}
+\contentsline {figure}{\numberline {24}{\ignorespaces MG995 connected to windows in wind tunnel.\relax }}{13}{figure.caption.26}
+\contentsline {figure}{\numberline {25}{\ignorespaces User interface for Android Application.\relax }}{14}{figure.caption.27}
+\contentsline {figure}{\numberline {26}{\ignorespaces First finished version of the wind tunnel, alongside all 4 group members.\relax }}{15}{figure.caption.28}
+\contentsline {figure}{\numberline {27}{\ignorespaces Windows inside tunnel; controlled by servo motor.\relax }}{15}{figure.caption.29}
+\contentsline {figure}{\numberline {28}{\ignorespaces Wind tunnel inside MIL; integration around 65\% done by then.\relax }}{16}{figure.caption.30}
+\contentsline {figure}{\numberline {29}{\ignorespaces Component Layout of the Aerobal System\relax }}{18}{figure.caption.31}

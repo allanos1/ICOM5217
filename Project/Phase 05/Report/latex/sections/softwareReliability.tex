@@ -1,0 +1,8 @@
+\section{Software Reliability}
+
+\subsection{Overall Reliability and Software Expansion}
+	Our software consists of a robust state machine with each component added through a library. Due to this, it works in a modular way, by calling functions from each library in the main method and running them through the state machine, one component at a time. Its design allows for additional functionality to be integrated to the system by adding only states and conditions allowing easy expansion of the software. A copy of the data will be saved in the android application. This maintains data integrity and allows the usage of data in both interfaces. 
+	
+	\subsection{Data Integrity}
+	Analog components have noise by nature and therefore need methods to eliminate it. In an effort to reduce noise and obtain measurements correctly, the values obtained from the sensors that are analog are averaged. The ADC of the MCU has the ability to take multiple samples of a measurement and average those samples to the magnitude of 64 samples. These are averaged as well aside from the software averaging previously mentioned of each value obtained.
+

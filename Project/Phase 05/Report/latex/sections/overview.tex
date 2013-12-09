@@ -1,0 +1,170 @@
+\section{System Overview}
+		In this section we provide an overview of all of the major components in \textbf{AeroBal}. They are included an interfaced in a strategic way to provide the user the best possible experience when conducting research on their various testing models.
+		
+		\subsection{MCU: Tiva C Series TM4C123G}
+		
+		Our selected MCU is the TM4C123G from Texas Instruments, widely known as the Tiva C Series launchpad. Our two biggest reasons for selecting it were the number of available pins (40) and pure processing power, both at a fairly low price (\$12.99). Figure 8 shows an image of our MCU.
+		
+		% from https://estore.ti.com/Assets/ProductImages/2013-04-12_Tiva_Launchpad_flat.jpg
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=2.0]{img/tivaCSeriesPNG}
+			\caption{The TM4C123G Tiva C Series Launchpad}
+		\end{figure}
+		
+		Some of the notable features of our the Tiva are the following:
+		
+		\begin{itemize}
+		 \item ARM Cortex-M4F processor core.
+		 \item 256 KB flash memory and 2 KB of EEPROM.
+ 		 \item 8 UART Ports, 4 SSI, and 4 I2C Ports.
+ 		 \item 2 PWM modules.
+ 		 \item 2 12-bit ADC modules.
+ 		 \item 1 3.3 V Voltage Source.
+ 		 \item 1 5 V Voltage Source.
+        \end{itemize}
+        
+        Throughout the process of the project, we have realized that we made a great decision by selecting this particular microcontroller. The features are great and, the immense amount of available pins have been perfect for us, given our large amount of interfaced sensors and devices. The power of the ARM Cortex processor core has also given us great flexibility for our large number of computations with all the data that we process through the system. 
+        
+        One of the cons of the Tiva is that it's ARM architecture, even though extremely powerful, has not allowed us to program our laboratories in a low level way like the other teams in the course. This has kept us working in C-Language programming all the time. 
+		
+		
+		\subsection{Strain Gauges}
+		
+		The strain gauges are arguably the most important part of the system besides the Tiva C. They provide the user the data of how much force is being exerted to the testing model. Naturally, these forces will vary depending on the aerodynamic characteristics of the object being tested. \\
+		
+		For our system, we selected gauges that can measure up to 20 Kg of forces. These are surplus to the requirements and should provide a user testing small objects (such as toy cars) more than enough flexibility to test their devices. \\
+		
+		These strain gauges were placed strategically to measure 3 axis: X, Y, and Z. The X and Y axis require two strain gauges, while the Z axis only requires one. \\
+		
+		The gauges require 5 V each, and their data is read using the ADC in the Tiva. Initially, the signal provided is not high enough. Therefore, they go through an amplification process using INA 121 Operational Amplifiers from Texas Instruments. These amplifiers are extremely cheap, and make the strain gauges work fine after building a small and simple circuit amplifying their signals.
+		
+		\subsection{Bluetooth Connection}
+		
+		Bluetooth connection to external devices, such as cell phones and tablets, is a feature that users should find more than handy. Being able to see the data they want through a wireless connection using their tablets or cell phones is one of the big steps we wanted to take to bring the current wind tunnel to the 21st century.  \\
+		
+		For AeroBal, we used the HC-05 Bluetooth Serial Port Module. It has UART Connectivity and programmable baud rate. The main idea of this bluetooth module was to allow wireless connectivity from the embedded system to a tablet or cell phone with the Android application. 
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/bluetoothModule}
+			\caption{The HC-05 (left) interfaced with the Tiva C (right)}
+		\end{figure}
+		
+		Some of the main hardware features in the HC-05 are:
+		
+		\begin{itemize}
+		 \item -80dBm sensitivity
+		 \item Low Power 1.8V Operation
+		 \item UART Interface with programmable baud rate
+		 \item Integrated antenna
+        \end{itemize}
+        
+        This module has been very effective for us. It works very well for us because it is easy to work with and works with a 5V voltage. Our Tiva C has an in-board 5V source, so working with is has been hassle-free. The integrated antenna has also eased us of working with that problem as well. 	
+		
+		\subsection{Pressure and Humidity Sensor}
+		
+		The pressure and humidity sensors are included to give more useful data to the users about the conditions in the current environment. In our system, we used the DHT11. This is a digital pressure and humidity sensor that is also fairly easy to use. It connects to an 8-bit microcontroller and delivers high-precision measurements. All of this in a very cost-effective package. 
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/DHT11}
+			\caption{DHT11 sensor (blue) interfaced with Tiva C and LCD Screen}
+		\end{figure}
+		
+		The DHT11 runs with a voltage of 5V. Given the Tiva C's integrated 5V source, interfacing with it in a voltage sense has not been a problem. However, the UART has been problematic in the sense of interfacing with the Tiva C. However, once it works, it does a great job of providing very precise data. We have seen precision of more then 5 decimal figures in the past.  
+		
+		\subsection{Anemometer}
+		
+		The anemometer is used to measure the velocity flowing through the tunnel. 
+		
+		\subsection{LCD Screen}
+		
+		A good LCD screen was a vital part of our system because AeroBal is meant to be very user-friendly. Although an Android Application is a great feature for the user, an LCD screen with all the required data in real-time will be used much more than the app. For our system we selected a C2004A LCD screen. 
+		It is identical to the Hitachi HD44780 screen used in the experiments. However, it has a bright, blue screen that allows more words than the HD44780. Due to the knowledge acquired during the labs, creating a successful library for it was not that complicated. 
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/LCD}
+			\caption{C2004A LCD Screen Interfaced with the Tiva C, DHT11, and Strain Gauges.}
+		\end{figure}
+		
+		This LCD has responded extremely well from the start. It requires a 5V source, which is comfortably provided by the Tiva. We can safely say the C2004A has been one of the best-performing components of AeroBal as a whole.
+		
+		\subsection{Wind Vane}
+		
+		The Wind vane is used to show the user the direction of the current air flow inside the tunnel. This component was not in our original design, but added later to the project by Dr. Jim\'{e}nez. The main purpose of the wind vane is to make AeroBal look more and more like a real wind tunnel with all of the major features found not only in other wind tunnels, but also in other places involving high levels of wind, such as farms.
+		A wind vane is, in it's most basic form, a rotating potentiometer moved by something that is somehow pasted in the top of it. The artifact stuck on top should be shaped like an arrow. The wind coming from the fan should move the potentiometer's resistance value. Thus, it also changes the voltage value being calculated by the Tiva's Analog-to-Digital converter.
+		One big disadvantage was that the smooth potentiometer we found did not behave in a linear way. This caused a need to characterize it in a specific way depending on the values the ADC read on the angles we wanted. 
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/windVane}
+			\caption{Wind Vane sensor used in AeroBal.}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/estimationDiagram}
+			\caption{Paper with angles and values used to characterize the sensor.}
+		\end{figure}
+		
+		In the software, the ADC values shown by the Tiva on each of the wanted angles were stored in an array in the sense of a lookup table. Whenever the wind vane is moved, the software searches through the lookup table to find the value in the array nearest to the one provided by the ADC and interpolates using the value in the position previous to the one found in the lookup table.
+		
+		The wind vane uses a 3.3V source. This is also provided by the Tiva, so interfacing with it was fairly simple as well in a hardware sense. The process of recording all the values inside an array, however, was long and tedious. Luckily, the process and algorithm provide a fairly accurate estimation of the angle required.
+		
+		\subsection{Servo Motor}
+		
+		The servo motor in our system is used to control how much air is going inside the tunnel from the fan we provided. It is expected that the flow of air into the tunnel from the fan is controlled by the voltage applied to the fan. However, the wind tunnel in the Civil Engineering at UPRM uses a different method. \\
+		Instead of controlling the voltage applied to the fan, they instead have windows inside the tunnel which they control instead. These windows control the air flow going into the tunnel fairly easily, without the hassle of working with the high voltages of the fan. \\
+		In order to emulate the original tunnel as much as possible, we made our own windows. These windows can be controlled by hand, but to make it automatized we use a servo motor to control them instead. \\
+		The servo motor we selected is the MG995 Standard Servo Motor. This motor works with a 5V source and can move at a speed of 0.20 seconds per 60 degrees. It's single function is to move the mechanical parts connected to the windows. 
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/servoMotor}
+			\caption{MG995 connected to windows in wind tunnel.}
+		\end{figure}
+		
+		This motor has worked well for us, although it has had problems with the voltages. It is supposed to work fine at 5 volts, but there have been cases where it does not work that way exactly. A solution has been to increase the voltage to 10 V. This makes it work better and more consistently. Ideally, we should find a way to make it work fine using the 5 volts constantly.
+		
+		\subsection{Android Application}
+		
+		One of the nicest features of AeroBal that most other wind tunnels do not have is a personal Android application used for controlling various aspects of the tunnel and watching the data you need. All of this from the commodity of your tablet or cell phone. With the Android application, the user may turn the fan on or off as desired, and view the measurements also displayed on the LCD screen in their own device.
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.4]{img/androidApp}
+			\caption{Proposed user interface for Android Application.}
+		\end{figure}
+		
+		Although not a necessity, an Android application is a good way to show how up to date we want to make the wind tunnel, using the newest technologies available. 
+		
+		\subsection{Miniature Wind Tunnel}
+		
+		A miniature wind tunnel had to be made in order to test our interfaced devices, given that we don't have access to the real-sized wind tunnel in the department of Civil Engineering at UPRM. This miniature tunnel was made entirely of wood, and we integrated a fan into it as the wind source. Even though the heart of AeroBal is a more effective way to measure the force exerted to the object being tested, a miniature tunnel was required because it was more comfortable that using the big tunnel in the Civil Engineering Department.
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.3]{img/GroupPhoto}
+			\caption{First finished version of the wind tunnel, alongside all 4 group members.}
+		\end{figure}
+		
+		The tunnel itself took around 4 weekends to complete, not counting the electronic parts added to it later. After the first version was completed, windows were added to the tunnel. These windows are meant to be operated with a servo motor. 
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.2]{img/Windows}
+			\caption{Windows inside tunnel; controlled by servo motor.}
+		\end{figure}
+		
+		After we included all the external physical components (windows and strain gauge bases), we moved the wind tunnel to the Microprocessor Interfacing Laboratory (MIL). Since then, all our testing has been conducted inside the lab and other components have been slowly integrated into it.
+		
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.1]{img/WindTunnelMIL}
+			\caption{Wind tunnel inside MIL; integration around 65\% done by then.}
+		\end{figure}
+		
+		This tunnel is expected to be painted and refined to look presentable to a big crowd by the time the project is 100\% done. Although it is not the most important part of the project, it is the showcase for great presentations of it.
+		
+		

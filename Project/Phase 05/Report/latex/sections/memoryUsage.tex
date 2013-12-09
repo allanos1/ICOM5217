@@ -1,0 +1,15 @@
+\section{Memory Usage}
+	
+	The following diagrams show the memory usage of our software in our Tiva C MCU. It was found directly from our IDE, Code Composer Studio while executing the latest version of the software and having run a few experiments on it.
+	
+	\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.5]{img/memoryUsage}
+			\caption{Diagram of the memory usage of all of our software, according to Code Composer Studio, during a particular execution.}
+		\end{figure}
+
+	The \textbf{.text} section of the FLASH memory has the program and it states that the program is 19.11kB in size and this includes all of the libraries that are used for programming the ARM microcontroller using the Tiva ARM API. Due to the size availability of the Tiva we can see that the system uses less than 10\% of the flash memory provided by the MCU. This provides a lot of opportunity for the expansion of the system software without having to introduce memory components. Should the elements be permanently stored in the MCU (they are not, but in the Android application they are as previously stated) then depending on the amount of data to store then the system might need to have an additional memory component added.
+
+% DO NOT ERASE
+%\leavevmode
+

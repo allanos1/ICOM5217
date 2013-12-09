@@ -1,0 +1,40 @@
+\section{Timing Analysis}
+
+	Various components of AeroBal need timers to work. We had to determine the base times of each one with the Tiva C's provided clock source and determine if it was compatible. After testing, it was found that all components worked with the default clocking in tests which is from the 16Mhz Internal Oscillator of the MCU. Some components require clock switching in order to function properly such as the ADC. These details are provided below.
+	
+	\subsection{Time Bases}
+	
+	The following table shows the minimum pulse widths of all the components in the system that require a clock source. This will give us an idea of the time bases for each module. 
+	
+	\begin{center}	
+	\begin{tabular}{|c|c|c|}
+			\hline
+				Component 							& Min. PW & Timer/Clock Parameters *\\
+			\hline
+				Barometric Pressure Sensor 			& 0.29$\mu s$	& Internal I2C Timer (100Kbps) (**)\\
+				Custom anemometer (Rot. Encoder)	& 0.5$s$  		& Timer: SysCtlClockGet()/2 \\
+				Bluetooth Module 					& 125$ns$ 		& Internal UART Timer (9600bps)**\\\
+				Humidity and Temperature Sensor 	& 1$\mu s$		& Timer: SysCtlClockGet()/1000000\\
+													& - 			& Timer: SysCtlClockGet()/55 For 18 ms\\
+													& - 			& Timer: SysCtlClockGet()/25000 For 40us\\
+													& - 			& Timer: SysCtlClockGet()/14900 For 67us\\
+				ADC & (1/16Mhz) & \textbf{SysCtlDiv10} Divider on Clock ***\\
+			\hline
+		\end{tabular} \\
+	\end{center}
+	
+	\textbf{*} For the Tiva API, timer parameters are provided by invoking the SysCtlClockGet() function which returns a timing base of 1 second. This value is then divided by inverse of the period required for the timer to obtain its frequency.
+
+	\textbf{**} Since the Tiva contains three internal oscillators (Pg 217 TM4C123GH6PM datasheet) clocking may be provided for modules who are performing clocking dependent operations without affecting the main operation of the processor.
+
+	\textbf{***} A divider is applied to the whole clock operation of the Tiva. This means that during the operation of the component that requires it, operations of all the components are applied this clocking scheme if interfaced. However in software, clocking is only set during the operation of the component that requires it.
+
+	\subsection{Analysis}
+
+
+		\noindent A \textbf{functional} minimum pulse width:
+		\noindent \textbf{Source:} Tiva w/ Bluetooth Module @ 9.6 Kbps Baud requires 8 Mhz Frequency.
+		\noindent This forces the processor to have a minimum frequency of:
+				\textbf{$$ 8 Mhz <  16Mhz = ChosenTivaFrequency $$}
+		\noindent Tiva gives us the benefit of having up to 80 Mhz to work with. We have chosen the default 16Mhz clocking scheme used in examples and tutorials and found that components work at the frequency.
+

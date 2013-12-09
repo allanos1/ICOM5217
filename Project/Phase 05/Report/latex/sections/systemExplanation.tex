@@ -1,0 +1,44 @@
+\section{System Overview}
+
+	AeroBal consists of balance (scale) device to act as the sensor for force, sensors to read experiment environment data, and a user interface. The scale can be connected to a prototype wind tunnel custom-built by the team to test the implementation of the sensors. In our case, we made our own small wind tunnel for testing, as shown below in the top level view of the system:
+
+	%TODO:
+	%Top Level Design.
+
+	\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.5]{img/system-toplevel}
+		\caption{System Top Level View.}
+	\end{figure}
+	 
+	%Calibration.
+	%www.ni.com/white-paper/3642/en/‎
+	%http://en.wikipedia.org/wiki/Load_cell
+	One of the key components of the system are the \emph{strain gauges} which measure the amount of force exerted from the wind on to the object being measured. The strain gauge is a device whose electrical resistance varies in proportion to the amount of strain being caused on it \emph{[NI reference]}. The strain gauges are normally used in load cells which are a combination of a mechanical arrangement and a strain gauge. The mechanical arrangement is deformed by an external force and the strain gauge tied or glued to the arrangement is indirectly deformed as well. 
+
+	To implement the strain gauge component of the system, load cells were used, and calibrated using a postal scale which contains a load cell as well. Multiple values were used to the order of 2.3 grams or the weight of a dime. Different amount of coins were placed both on a scale and on the load cell such that the load cell could be characterized by obtaining multiple values and then obtaining the equations of each one. 
+
+	%Characterization image.
+		\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.25]{img/loadcell-calibration}
+			\caption{Calibration using weights.}
+		\end{figure}
+
+	A total of 4 strain gauges were used such that the both positive and negative components of the drag and lift forces were measured. A balance was designed based on the same concept provided by Dr. Zapata that provided free movement in the 3 axes. For this the designed however, the balance was enclosed between the strain gauges such that it did not move as depicted below. The object is attached to a base that is suspended from a rod that is directly connected to the balance, transferring all forces to it. The design of the balance is such that the forces are separated correctly into the component because of its movement.
+
+	\begin{figure}[H]
+			\centering
+				\includegraphics[scale=0.4]{img/balance-concept}
+			\caption{Balance Concept and its force detection diagram. \cite{ref:wright5}}
+		\end{figure}
+
+	Besides the strain gauges, there are sensors to detect temperature, wind direction, humidity, pressure, and wind speed. 
+	A servo is used to control windows that allow the passage of air in the tunnel depending on their opening, and thus controlling wind speed.
+	The user interface consists of an LCD screen and LEDs for output, and buttons for input, as well as a tablet application that allows remote control of the system from small distances using Bluetooth.
+	 
+	All of these things are interfaced using a Tiva C Series Cortex-M4 microcontroller (TM4C123GH6PM) from Texas Instruments. The main purpose of our system is to automate as much as possible the research conducted in the current wind tunnel at UPRM.
+
+
+
+	

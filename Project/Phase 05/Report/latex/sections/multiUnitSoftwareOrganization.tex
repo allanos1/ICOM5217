@@ -1,0 +1,11 @@
+\section{Multi-Unit Software Organization}
+
+A software framework was developed for the implementation of this project as a means of abstracting the processes and replicating the flowchart to the maximum extent possible. Each component integrated in the project was modularized with self-made libraries, some with simple functions, others with propietary software libraries from TI. to make their interfacing process easier. Each sensor has a library with instructions on how to install the library and how to assign their ports and interrupts. As for the structure of this programming. In the following image, a description of the software organization:
+
+\begin{figure}[H]
+		\centering
+			\includegraphics[scale=0.4]{img/organize}
+		\caption{Software Organization Chart of our system.}
+	\end{figure}
+
+A state machine for the main application was developed such that it replicates the flowcharts planned for the application. This state machine can be transitioned from state by both hardware and software interface.

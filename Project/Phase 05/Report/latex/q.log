@@ -1,0 +1,13 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdftex 2013.2.8)  7 DEC 2013 02:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**cd /
+(/usr/local/bin/texlive/2012/texmf-dist/tex/latex/tools/q.tex File ignored
+)
+! Emergency stop.
+<*> cd /
+        
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!

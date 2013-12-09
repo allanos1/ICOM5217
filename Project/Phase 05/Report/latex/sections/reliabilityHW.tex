@@ -1,0 +1,17 @@
+\section{Hardware Reliability}
+
+	\subsection{Precision and Convenience}
+
+	Our system was designed specifically to make the user's usage of the wind tunnel convenient, while keeping the precision previously had. The strain gauges measure what is probably the most important parameter of the system, force. They currently measure in ounces and pounds, with a precision of around 0.01 oz. The method used to obtain their measurement was to characterize the gauges using different weights as mentioned earlier. This may present inconsistencies especially if they are deformed. The strain guages can deform if too much force is applied to them specially if well beyond their capability. As per the functional requirements of the system at the initial stage, professor Zapata stated that the heaviest component that would be measured in the system would be of 15lb and hence we have chosen strain gauges with a capability of 30lb to well exceed this range. Should they accidentally exceed this range, the strain gauges must be replaced.
+	
+	The Android Application serves as an extension to the hardware User Interface of the system, providing remote control of the system components and operation and an important feature of the system which is storage of data. The data compiled from each experiment is stored in the system with the date and time of the experiment to allow the user to access this data for later analysis if desired. Currently the Android application has the capability to run custom built analysis tools for the experiment but these have been not implemented yet. The operating system application interface allows for many possible ways to handle and manipulate the data received from the system, giving this component great importance for expansion in future work.
+
+	The pressure and temperature sensor provides data presicion up to 0.1 C and 1 Pa. The Humidity and temperature sensor were programmed to provide data up to 1\% and 1C of the respective parameters.
+
+	The wind vane angles were mapped using a protractor. The anemometer was tested by putting it in the top of one of our cars, and we compare the speed given by it with the miles-per-hour count given by the car. This test gave us an error of less than 10\%. For example, when the car was driving at 25mph, the anemometer displayed around 28mph, and when the car slowed down to around 10mph, the anemometer displayed 11 mph.
+	The wind vane is characterized to a range of 28 degrees to 290 degrees due to the potentiometer not being able to rotate 360 degrees completely.An alternative would need to be considered if it is required to rotate completely although in the wind tunnel the potentiometer was placed such that the direction of the wind was in the middle if this range and if there was rotation then the wind vane would had $(290-28)/2 = 131$ degrees to move. 
+
+	As of the current system implementation, noise reduction for the AC components has not yet been implemented in hardware but only in software. Averaging and multiple sampling methods are used in software. This hardware noise reduction component is planned for future work.
+
+
+	

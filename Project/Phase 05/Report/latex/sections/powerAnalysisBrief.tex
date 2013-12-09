@@ -1,0 +1,128 @@
+\section{Power Analysis}
+	Power analysis requires that we consider the logic compability of the signals, the driving compability of the components, the design of the power supply and the load on the microprocessor in use.
+	
+	\subsection{Logic Compatibility}
+	The following listing and table shows all of the major components of AeroBal and their voltages:
+	\vspace{-5mm}
+	\begin{itemize}
+		\item \textbf{DHT11}: Humidity and Temperature Sensor
+		\item \textbf{BMP085}: Barometric Pressure and Temperature Sensor
+		\item \textbf{MG995}: Servo
+		\item \textbf{C2004A}: LCD Interface
+		\item \textbf{INA129}: Instrumental Amplifier
+		\item \textbf{EGBT-046S}: Bluetooth
+		\item \textbf{Relay}
+		\item \textbf{TM4C123GH6PM}: Tiva MCU
+	\end{itemize}
+	\vspace{-5mm}
+	
+	\begin{center}	
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+				\rowcolor{gray!50}\textbf{Component} & V$_{DD Rec}$ & V$_{IH}$ & V$_{IL}$ & V$_{OH}$ & V$_{OL}$ & I$_{Drive}$ & I$_{Source}$\\
+			\hline
+					TM4C123GH6PM & 3.3V & 2.48V & 1.16V & 2.4V & 0.4V & * & 31.5mA\\ %Power about 0.1575W
+					MG995 & 5V & * & * & * & * & * & 450mA\\ %Power about 2.25W
+					BMP085 & 3.3V & 2.15V & 0.66V & 1.32V & 0.3V & 3mA & 5uA \\ %Power about 0.000025W
+					DHT11 & 5V & * & * & * & * & * & 2.5mA \\ %Power about 0.0125W
+					EGBT-046S & 3.3V & 2V & 0.66V  & 2.64V & 0.66V & * & 40mA \\ %Power about 0.066W
+					C2004A & 5.0V & 2.2V & 0.6V & 2.4V & 0.4V & 0.8mA & 4.0mA \\ %power about 0.756W
+					INA129 & 5V & 2V & 0.8 V & 1.4V & 0.8 V & * & 750uA\\ % 
+					Relay & 3.3V & * & * & * & * & * & 30mA\\  % Power about. 0.36W
+					RPR-220 & 5V & * & * & * & * & * & 10.3mA\\  % Power about. 0.36W
+			\hline
+				\rowcolor{gray!50} & Safe $\pm$V$_{IN}$ & $+$V$_{O}$& $-$V$_{O}$& P.Supply& & &\\
+			\hline
+					INA129 & $\pm$40V & $+$V - 0.9 & $-$V + 0.8 & $\pm$15V & - & - & -\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+			
+	%%Servo: http://www.rcgroups.com/forums/showthread.php?t=623412å
+	
+	\textbf{NOTE:} The extra two analog components (Wind Vane and Anemometer) each work at 3.3V and 5V, respectively. Thus, there are no compatibility issues with those two components either.
+	
+	\textbf{*} The information is not specified in the datasheets or is not applicable (not digital).
+
+	\subsection{Driving Capability}
+	
+	Driving Capability testing ensures that components are provided the required current to function properly. The Tiva Microprocessor can provide from each GPIO port a maximum of 8mA. All components are therefore drivable if needed by GPIO ports. For components whose current drive was not found, the Tiva was tested and confirmed to be working with the component. Power supply cannot be provided by a single Tiva MCU, as in testing it was found that both the servo and the relay did not properly work without interfacing with an external power supply therefore these components have made the system require an external power supply.
+			
+	
+	\subsection{Power Supply Design}
+	
+	For AeroBal we chose the LPK 230 power supply which follows the ATX specification. It is a simple computer power supply that we found and preferred because it has an output of +12V, +5V, and +3.3V as specified in the standard. Computer power supplies by definition regulate the voltage for use in a computer , and some of them contain other components like short circuit, overload, overvoltage, undervoltage, overcurrent, and overtemperature protection. 
+
+	\subsection{Port Loading}
+	
+	The following table shows the current capabilities of our power supply: \\
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+				Source & Voltage & Current  \\
+			\hline
+				1 & +3.3V & 25A  \\
+				2 & +5V & 25A  \\
+				3 & +12V 1 & 16A  \\
+			\hline
+		\end{tabular}
+	\end{center}
+
+		
+		Here we show the calculations for current needed from each port:
+		
+		\begin{itemize}
+			\item \textbf{+5V connector} (Capacity: 25A):\\
+			  
+			  	This connector will have four components, the instrumentational amplifiers, LCD, Humidity and Temperature Sensor, Servo, and the Anemometer Sensor : 
+
+			  	$$750uA + 4.0mA + 2.5mA + 450mA + 10.3mA = \textbf{0.46355A} << \textbf{25A} $$
+			  
+			\item \textbf{+3.3V connector} (Capacity: 25A):\\
+				
+				This connector will have four components: the relay, Bluetooth Module, Pressure Sensor, and the MCU:
+
+			  	$$ 30mA + 40mA + 5uA + 31.5mA = 101.505 mA = \textbf{0.101505A}  << \textbf{25A} $$
+			  
+		\end{itemize} 
+		
+		Hance the device implementation will consume a \emph{total current} of:
+		$$ \textbf{565.055mA} $$
+			
+		Power consumption for the system:
+		$$ (0.46355A * 5V) + (0.101505 * 3.3V) =  \textbf{2.6527W} $$
+
+	\subsection{Thermal Analysis}
+	
+		On thermal analysis we need to determine the maximum power dissipation the chip can handle. Using function 8.11 from the book:
+				$$P_{diss(max)}=(T_{J(max)}-T_{A})/\theta_{JA}$$
+		According to the datasheets:
+				$$T_{J(max)} = 150 C$$
+				$$T_{A} = 25 C$$
+				$$\theta_{JA}=54.8 C/W$$
+				$$P_{diss(max)}=(150C-25C) / 54.8 = 2.28 W $$
+
+		Hence, 2.28 W is the maximum power dissipation of the microprocessor.
+
+		The current required by the processor while running at the speed of 16MHz with V$_{DD}$ = 3.3V and ambient temperature 25C is 31.5mA. The current required from GPIO devices should they be both powered and interfaced by the MCU would be (With the exception of the Relay and the Servo which have been confirmed to need an external power supply):
+
+			$$  3mA + 2.5mA + 40mA + 4.0mA + 10.3mA = 60mA$$
+			$$I_{DD(avg)} + \sum_{allpins}^{} c_i = 45.1mA + 60mA = 105.1mA$$
+
+		Multiply by voltage level V$_{DD}$ = 3.3V:
+
+			$$P_{diss}= 3.3V * 105.1mA = 346.83 mW < P_{diss(max)}= 2.28 W$$
+
+		Therefore our system complies with the thermal limitations of the chip and it is safe to use for the application.
+
+
+	\subsubsection{Fan Relay}
+
+		The Fan Relay datasheet specifies that the power consumption of the relay coil is 0.36W. This component is not directly supplied power by the microprocessor but from an external source and therefore this dissipation does not affect the microprocessor thermal analysis.
+
+	\subsubsection{Servo Motor}
+	%http://www.micromo.com/motor-calculations.aspx
+		The datasheet for the servo does not specify power consumption however an auxiliary version of the datasheet was found in: \textbf{http://www.rcgroups.com/forums/showthread.php?t=650962} and using this information is how we state the current consumption which is 450mA. 
+
+		However, while researching about how to calculate the power dissipation of a motor, it was found in \textbf{\emph{http://www.micromo.com/motor-calculations.aspx}} that the resistance of the motor windings of the motor is needed to be able to calculate the power dissipation. The datasheet of the motor being used does not provide such parameter, and after consultation from a student it was found that special equipment would need to be used to determine such parameter. Once obtained, the procedure highlighted in the \'Thermal Calculations\'   section of the webpage may be used to calculate its dissipation.

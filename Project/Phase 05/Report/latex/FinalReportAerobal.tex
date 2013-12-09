@@ -1,0 +1,110 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{framed}
+\usepackage{alltt}
+\usepackage{res/reportStyle}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage{color,colortbl}
+\definecolor{darkgreen}{rgb}{0.2,0.5,0.2}
+\definecolor{fushia}{rgb}{0.7,0.3,0.4}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{todonotes}
+\usepackage{longtable} 
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{lscape}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\definecolor{Gray}{gray}{0.9}
+\newcommand{\swpaf}{\vspace{-0.45cm}\end{itemize}\\ \hline  \multicolumn{1}{|l|}{Professor Annotations} \\ [0.6in] \hline} 
+\newcommand{\swmyth}[1] {\rowcolor{Gray} #1 \\ \hline \vspace{-0.75cm}\begin{itemize}}
+
+\newcommand{\hwpaf}{%\vspace{-0.45cm}\end{itemize}\\ 
+\hline \multicolumn{2}{|l|}{Professor Annotations} \\ [0.6in] \hline} 
+\newcommand{\hwmyth}[1] {\multicolumn{3}{|l|}{\cellcolor{Gray} #1} \\ \hline \vspace{-0.75cm}\begin{itemize}}
+
+%*******************************************
+% Line Spacing: One and a half.
+\linespread{1.2}
+
+%*******************************************
+% Coloring
+%\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+
+\begin{document}
+
+	\input{res/titlePageAerobal.tex}
+
+	% PAGES BEFORE REPORT ACTUALLY STARTS
+	\pagenumbering{roman}
+
+	\input{sections/abstract} \newpage
+	\tableofcontents \newpage
+	\listoffigures \newpage
+
+	% PAGES INSIDE REPORT
+	\pagenumbering{arabic}
+
+	% OPENING SECTION
+	\input{sections/introduction} %DONE
+	\input{sections/background}   %DONE
+
+	% Hardware Description
+	\input{sections/systemExplanation}   %DONE
+	\input{sections/sbdv3} 				 %DONE
+	\input{sections/powerAnalysisBrief}  %DONE
+	\input{sections/timingAnalysisBrief} %DONE
+	\input{sections/reliabilityHW}		 %DONE
+	\input{sections/memoryUsage} \newpage       %DONE
+	\input{sections/levelOfCompletionHardware}  %DONE
+
+	% Software Description
+	\input{sections/softwarePlan} \newpage		   %DONE
+	\input{sections/multiUnitSoftwareOrganization} \newpage 
+	\input{sections/softwareReliability} \newpage  %DONE
+	\input{sections/levelOfCompletionSoftware}     %DONE
+
+	% Closing Section
+	\input{sections/conclusion} 		%DONE
+	\input{sections/futureWork} 		%DONE 
+
+	% BIBLIOGRAPHY
+	\bibliographystyle{ieeetr}
+	\bibliography{references}
+
+	% APPENDIX
+	\appendix
+
+	\newpage
+	\pagestyle{empty}
+	\vspace*{\fill}
+	\begin{center}
+	\HRule \\[0.5cm]
+	{ \huge \bfseries Appendices}\\[0.2cm]
+	\HRule \\[1.5cm]
+	\vspace*{\fill}
+	\end{center}
+	\addappheadtotoc
+	\newpage
+
+	% SOURCE CODE LISTINGS
+	\input{sections/references}	\newpage		 %DONE
+	\input{res/titlePageUsersGuide.tex}	
+	\includepdf[pages={1,2,3,4,5}]{sections/Blank.pdf} 
+	\input{sections/systemSpecifications}        %DONE 
+	\input{sections/schematics}					 %DONE
+	\includepdf[pages={1}]{sections/schematics.pdf} \newpage
+	\input{sections/componentLayout}  \newpage	 %DONE
+	\input{sections/billOfMaterials}     %DONE
+	\input{sections/WorkDistribution}            %DONE
+
+\end{document}
