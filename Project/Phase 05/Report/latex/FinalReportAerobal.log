@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 DEC 2013 10:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 DEC 2013 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1186,12 +1186,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[10]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 128.
-) (./sections/timingAnalysisBrief.tex [11] [12])
+[10]) (./sections/timingAnalysisBrief.tex [11] [12])
 (./sections/reliabilityHW.tex [13]) (./sections/memoryUsage.tex
-<img/memoryUsage.png, id=502, 635.37375pt x 296.10625pt>
+<img/memoryUsage.png, id=505, 635.37375pt x 296.10625pt>
 File: img/memoryUsage.png Graphic file (type png)
 
 <use img/memoryUsage.png>
@@ -1214,20 +1211,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--29
  []
 
 [16]) (./sections/softwarePlan.tex
-<img/flowchart-outline.png, id=515, 733.74126pt x 1084.05pt>
+<img/flowchart-outline.png, id=518, 733.74126pt x 1084.05pt>
 File: img/flowchart-outline.png Graphic file (type png)
 
 <use img/flowchart-outline.png>
 Package pdftex.def Info: img/flowchart-outline.png used on input line 6.
 (pdftex.def)             Requested size: 315.5026pt x 466.13242pt.
 
-<img/flowchart-calibrate.png, id=516, 894.34125pt x 1231.60126pt>
+<img/flowchart-calibrate.png, id=519, 894.34125pt x 1231.60126pt>
 File: img/flowchart-calibrate.png Graphic file (type png)
 
 <use img/flowchart-calibrate.png>
 Package pdftex.def Info: img/flowchart-calibrate.png used on input line 12.
 (pdftex.def)             Requested size: 335.37714pt x 461.84933pt.
- [17 <./img/flowchart-outline.png (PNG copy)>] <img/flowchart2.png, id=521, 524
+ [17 <./img/flowchart-outline.png (PNG copy)>] <img/flowchart2.png, id=524, 524
 .96124pt x 1053.9375pt>
 File: img/flowchart2.png Graphic file (type png)
 
@@ -1235,14 +1232,14 @@ File: img/flowchart2.png Graphic file (type png)
 Package pdftex.def Info: img/flowchart2.png used on input line 18.
 (pdftex.def)             Requested size: 262.47998pt x 526.96747pt.
  [18 <./img/flowchart-calibrate.png (PNG copy)>]
-<img/flowchart3.png, id=527, 545.03625pt x 1043.9pt>
+<img/flowchart3.png, id=530, 545.03625pt x 1043.9pt>
 File: img/flowchart3.png Graphic file (type png)
  <use img/flowchart3.png>
 Package pdftex.def Info: img/flowchart3.png used on input line 24.
 (pdftex.def)             Requested size: 272.51746pt x 521.94872pt.
 
 [19 <./img/flowchart2.png>]
-<img/flowchart-android.png, id=533, 685.56125pt x 1413.28pt>
+<img/flowchart-android.png, id=536, 685.56125pt x 1413.28pt>
 File: img/flowchart-android.png Graphic file (type png)
 
 <use img/flowchart-android.png>
@@ -1250,7 +1247,7 @@ Package pdftex.def Info: img/flowchart-android.png used on input line 30.
 (pdftex.def)             Requested size: 274.21964pt x 565.30199pt.
  [20 <./img/flowchart3.png>]) [21 <./img/flowchart-android.png>] (./sections/mu
 ltiUnitSoftwareOrganization.tex
-<img/organize.png, id=543, 682.55pt x 863.225pt>
+<img/organize.png, id=546, 682.55pt x 863.225pt>
 File: img/organize.png Graphic file (type png)
  <use img/organize.png>
 Package pdftex.def Info: img/organize.png used on input line 7.
@@ -1309,7 +1306,7 @@ been already used, duplicate ignored
                    \relax 
 l.34 \end{titlepage}
                      [1])
-<sections/Blank.pdf, id=584, page=1, 614.295pt x 794.97pt>
+<sections/Blank.pdf, id=587, page=1, 614.295pt x 794.97pt>
 File: sections/Blank.pdf Graphic file (type pdf)
 
 <use sections/Blank.pdf, page 1>
@@ -1340,7 +1337,7 @@ File: sections/Blank.pdf Graphic file (type pdf)
 Package pdftex.def Info: sections/Blank.pdf, page1 used on input line 102.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <./sections/Blank.pdf>]
-<sections/Blank.pdf, id=625, page=2, 614.295pt x 794.97pt>
+<sections/Blank.pdf, id=628, page=2, 614.295pt x 794.97pt>
 File: sections/Blank.pdf Graphic file (type pdf)
 
 <use sections/Blank.pdf, page 2>
@@ -1362,7 +1359,7 @@ File: sections/Blank.pdf Graphic file (type pdf)
 Package pdftex.def Info: sections/Blank.pdf, page2 used on input line 102.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <./sections/Blank.pdf>]
-<sections/Blank.pdf, id=648, page=3, 614.295pt x 794.97pt>
+<sections/Blank.pdf, id=651, page=3, 614.295pt x 794.97pt>
 File: sections/Blank.pdf Graphic file (type pdf)
 
 <use sections/Blank.pdf, page 3>
@@ -1384,7 +1381,7 @@ File: sections/Blank.pdf Graphic file (type pdf)
 Package pdftex.def Info: sections/Blank.pdf, page3 used on input line 102.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./sections/Blank.pdf>]
-<sections/Blank.pdf, id=667, page=4, 614.295pt x 794.97pt>
+<sections/Blank.pdf, id=670, page=4, 614.295pt x 794.97pt>
 File: sections/Blank.pdf Graphic file (type pdf)
 
 <use sections/Blank.pdf, page 4>
@@ -1406,7 +1403,7 @@ File: sections/Blank.pdf Graphic file (type pdf)
 Package pdftex.def Info: sections/Blank.pdf, page4 used on input line 102.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <./sections/Blank.pdf>]
-<sections/Blank.pdf, id=686, page=5, 614.295pt x 794.97pt>
+<sections/Blank.pdf, id=689, page=5, 614.295pt x 794.97pt>
 File: sections/Blank.pdf Graphic file (type pdf)
 
 <use sections/Blank.pdf, page 5>
@@ -1429,7 +1426,7 @@ Package pdftex.def Info: sections/Blank.pdf, page5 used on input line 102.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [5 <./sections/Blank.pdf>]
 (./sections/systemSpecifications.tex
-<img/tivaCSeriesPNG.png, id=690, 119.54663pt x 150.5625pt>
+<img/tivaCSeriesPNG.png, id=693, 119.54663pt x 150.5625pt>
 File: img/tivaCSeriesPNG.png Graphic file (type png)
 
 <use img/tivaCSeriesPNG.png>
@@ -1446,7 +1443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-<img/Capture.png, id=695, 425.33907pt x 327.47343pt>
+<img/Capture.png, id=698, 425.33907pt x 327.47343pt>
 File: img/Capture.png Graphic file (type png)
  <use img/Capture.png>
 Package pdftex.def Info: img/Capture.png used on input line 37.
@@ -1471,7 +1468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<img/bluetoothModule.png, id=700, 780.9175pt x 583.17876pt>
+<img/bluetoothModule.png, id=703, 780.9175pt x 583.17876pt>
 File: img/bluetoothModule.png Graphic file (type png)
 
 <use img/bluetoothModule.png>
@@ -1482,7 +1479,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.58 
-      [8] <img/DHT11.png, id=705, 519.9425pt x 388.45125pt>
+      [8] <img/DHT11.png, id=708, 519.9425pt x 388.45125pt>
 File: img/DHT11.png Graphic file (type png)
 
 <use img/DHT11.png>
@@ -1494,7 +1491,7 @@ been already used, duplicate ignored
                    \relax 
 l.79 
       [9 <./img/bluetoothModule.png>]
-<img/LCD.png, id=710, 780.9175pt x 583.17876pt>
+<img/LCD.png, id=713, 780.9175pt x 583.17876pt>
 File: img/LCD.png Graphic file (type png)
  <use img/LCD.png>
 Package pdftex.def Info: img/LCD.png used on input line 90.
@@ -1505,7 +1502,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
                    \relax 
 l.93 
       [10 <./img/DHT11.png>]
-<img/windVane.png, id=715, 780.9175pt x 583.17876pt>
+<img/windVane.png, id=718, 780.9175pt x 583.17876pt>
 File: img/windVane.png Graphic file (type png)
  <use img/windVane.png>
 Package pdftex.def Info: img/windVane.png used on input line 103.
@@ -1516,7 +1513,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
                    \relax 
 l.106 
        [11 <./img/LCD.png>]
-<img/estimationDiagram.png, id=720, 583.17876pt x 780.9175pt>
+<img/estimationDiagram.png, id=724, 583.17876pt x 780.9175pt>
 File: img/estimationDiagram.png Graphic file (type png)
 
 <use img/estimationDiagram.png>
@@ -1528,7 +1525,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
                    \relax 
 l.114 
        [12 <./img/windVane.png> <./img/estimationDiagram.png>]
-<img/servoMotor.png, id=727, 780.9175pt x 583.17876pt>
+<img/servoMotor.png, id=730, 780.9175pt x 583.17876pt>
 File: img/servoMotor.png Graphic file (type png)
 
 <use img/servoMotor.png>
@@ -1540,7 +1537,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
                    \relax 
 l.133 
        [13 <./img/servoMotor.png>]
-<img/androidApp.png, id=732, 1204.5pt x 1927.2pt>
+<img/androidApp.png, id=735, 1204.5pt x 1927.2pt>
 File: img/androidApp.png Graphic file (type png)
  <use img/androidApp.png>
 Package pdftex.def Info: img/androidApp.png used on input line 136.
@@ -1551,13 +1548,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
                    \relax 
 l.145 
        [14 <./img/androidApp.png>]
-<img/GroupPhoto.png, id=738, 875.52094pt x 688.07062pt>
+<img/GroupPhoto.png, id=741, 875.52094pt x 688.07062pt>
 File: img/GroupPhoto.png Graphic file (type png)
 
 <use img/GroupPhoto.png>
 Package pdftex.def Info: img/GroupPhoto.png used on input line 148.
 (pdftex.def)             Requested size: 262.65831pt x 206.42278pt.
- <img/Windows.png, id=739, 361.35pt x 358.33875pt>
+ <img/Windows.png, id=742, 361.35pt x 358.33875pt>
 File: img/Windows.png Graphic file (type png)
 
 <use img/Windows.png>
@@ -1569,7 +1566,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
                    \relax 
 l.161 
        [15 <./img/GroupPhoto.png> <./img/Windows.png>]
-<img/WindTunnelMIL.png, id=745, 780.9175pt x 583.17876pt>
+<img/WindTunnelMIL.png, id=748, 780.9175pt x 583.17876pt>
 File: img/WindTunnelMIL.png Graphic file (type png)
 
 <use img/WindTunnelMIL.png>
@@ -1581,7 +1578,7 @@ dentifier (name{page.16}) has been already used, duplicate ignored
                    \relax 
 l.105 ...depdf[pages={1}]{sections/schematics.pdf}
                                                    \newpage [16 <./img/WindTunn
-elMIL.png>] <sections/schematics.pdf, id=752, page=1, 614.295pt x 794.97pt>
+elMIL.png>] <sections/schematics.pdf, id=755, page=1, 614.295pt x 794.97pt>
 File: sections/schematics.pdf Graphic file (type pdf)
 
 <use sections/schematics.pdf, page 1>
@@ -1618,7 +1615,7 @@ Package pdftex.def Info: sections/schematics.pdf, page1 used on input line 105.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [17 <./sections/schematics.pdf>]
 (./sections/componentLayout.tex
-<img/componentlayout.png, id=770, 730.73pt x 515.9275pt>
+<img/componentlayout.png, id=773, 730.73pt x 515.9275pt>
 File: img/componentlayout.png Graphic file (type png)
 
 <use img/componentlayout.png>
@@ -1636,7 +1633,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--36
+Overfull \hbox (8.12941pt too wide) in paragraph at lines 5--49
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--49
 
  []
 
@@ -1644,20 +1646,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \newpage
-              [19]pdfTeX warning (ext4): destination with the same identifier (
-name{page.20}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38 \newpage
-              [20]) (./sections/WorkDistribution.tex)
+l.51 \newpage
+              [19]) (./sections/WorkDistribution.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.110 \end{document}
-                     [21]
+                     [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./FinalReportAerobal.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
@@ -1668,10 +1665,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
  20416 strings out of 493315
- 352108 string characters out of 6137904
- 547438 words of memory out of 5000000
+ 352117 string characters out of 6137904
+ 547504 words of memory out of 5000000
  23203 multiletter control sequences out of 15000+600000
- 40246 words of font info for 79 fonts, out of 8000000 for 9000
+ 38617 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,18n,75p,1255b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1680,14 +1677,13 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/zapfding/uzdr.
-pfb>
-Output written on FinalReportAerobal.pdf (56 pages, 32993857 bytes).
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/zapfd
+ing/uzdr.pfb>
+Output written on FinalReportAerobal.pdf (55 pages, 32984902 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 664 compressed objects within 7 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 663 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
  625 words of extra memory for PDF output out of 10000 (max. 10000000)
 
