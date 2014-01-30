@@ -1,6 +1,9 @@
-Icom5217-MicroprocessorInterfacing
-==================================
+ICOM5217
 
-Repo is not completely tidy just in case.
+Microprocessor Interfacing Course
+
+- Experiments
+- Reports
+- AeroBal Project
 
 
